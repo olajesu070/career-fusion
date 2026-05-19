@@ -1,0 +1,157 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - navigation [ref=e4]:
+      - link "Career Fusion" [ref=e5] [cursor=pointer]:
+        - /url: /
+        - img "Career Fusion" [ref=e6]
+      - generic [ref=e7]:
+        - link "Home" [ref=e8] [cursor=pointer]:
+          - /url: "#"
+          - text: Home
+        - link "Students" [ref=e10] [cursor=pointer]:
+          - /url: "#"
+          - text: Students
+        - link "Employers" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+          - text: Employers
+        - link "Institutions" [ref=e12] [cursor=pointer]:
+          - /url: "#"
+          - text: Institutions
+        - link "Contact Us" [ref=e13] [cursor=pointer]:
+          - /url: "#"
+          - text: Contact Us
+      - generic [ref=e14]:
+        - link "Login" [ref=e15] [cursor=pointer]:
+          - /url: "#"
+        - link "Sign-up" [ref=e16] [cursor=pointer]:
+          - /url: "#"
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - heading "Know Your Readiness. Get Hired Faster" [level=1] [ref=e22]:
+          - text: Know Your
+          - text: Readiness. Get Hired
+          - text: Faster
+        - paragraph [ref=e23]: Stop guessing. Start proving your employability with real opportunities
+      - generic [ref=e24]:
+        - button "Start My Readiness Check →" [ref=e25]:
+          - text: Start My Readiness Check
+          - generic [ref=e26]: →
+        - button "Hire Job-Ready Talent →" [ref=e27]:
+          - text: Hire Job-Ready Talent
+          - generic [ref=e28]: →
+    - generic [ref=e29]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: ☹
+        - paragraph [ref=e33]: I keep getting rejected and I don't know why
+      - generic [ref=e34]:
+        - generic [ref=e35]: ↗
+        - paragraph [ref=e36]: "Readiness Score updated: +12%"
+      - paragraph [ref=e38]: Okay... this feels different.
+      - paragraph [ref=e40]: This is the progress we look for.
+      - img "Student" [ref=e42]
+      - img "Mentor" [ref=e44]
+  - generic [ref=e47]:
+    - generic [ref=e51]:
+      - generic [ref=e52]: 🎓
+      - paragraph [ref=e53]: Verified Credentials
+      - paragraph [ref=e54]: "[Placeholder for student image]"
+    - generic [ref=e55]:
+      - generic [ref=e56]:
+        - generic [ref=e57]: FOR STUDENTS
+        - heading "Stop guessing, start proving your potential" [level=2] [ref=e58]:
+          - text: Stop guessing,
+          - text: start proving
+          - text: your potential
+        - paragraph [ref=e59]: Showcase your real-world skills with verified projects and achievements. Build a portfolio that proves you're ready for the job.
+      - list [ref=e60]:
+        - listitem [ref=e61]:
+          - generic [ref=e62]: ✓
+          - text: Get verified credentials that employers trust
+        - listitem [ref=e63]:
+          - generic [ref=e64]: ✓
+          - text: Showcase real projects and accomplishments
+        - listitem [ref=e65]:
+          - generic [ref=e66]: ✓
+          - text: Connect directly with hiring companies
+      - button "Start as Student" [ref=e67]
+  - generic [ref=e70]:
+    - generic [ref=e71]:
+      - generic [ref=e72]:
+        - generic [ref=e73]: FOR EMPLOYERS
+        - heading "Hire top talent, just CMA" [level=2] [ref=e74]:
+          - text: Hire top talent,
+          - text: just CMA
+        - paragraph [ref=e75]: Access a pool of pre-verified candidates with proven skills. Make faster hiring decisions with confidence and accuracy.
+      - list [ref=e76]:
+        - listitem [ref=e77]:
+          - generic [ref=e78]: ✓
+          - text: Access pre-verified top talent
+        - listitem [ref=e79]:
+          - generic [ref=e80]: ✓
+          - text: Reduce hiring time and costs
+        - listitem [ref=e81]:
+          - generic [ref=e82]: ✓
+          - text: Build long-term partnerships with qualified candidates
+      - button "Start Hiring" [ref=e83]
+    - generic [ref=e87]:
+      - generic [ref=e88]: 💼
+      - paragraph [ref=e89]: Verified Team
+      - paragraph [ref=e90]: "[Placeholder for employer image]"
+  - generic [ref=e92]:
+    - heading "Ready to Transform Your Career Journey?" [level=2] [ref=e93]
+    - paragraph [ref=e94]: Join thousands of students and employers on Career Fusion
+    - generic [ref=e95]:
+      - button "Join as Student" [ref=e96]
+      - button "Partner with Us" [ref=e97]
+  - contentinfo [ref=e98]:
+    - generic [ref=e99]:
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: CareerFusion
+          - paragraph [ref=e103]: Connecting talent with opportunity
+        - generic [ref=e104]:
+          - heading "For Students" [level=4] [ref=e105]
+          - list [ref=e106]:
+            - listitem [ref=e107]:
+              - link "Get Verified" [ref=e108] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e109]:
+              - link "Build Portfolio" [ref=e110] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e111]:
+              - link "Find Jobs" [ref=e112] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e113]:
+          - heading "For Employers" [level=4] [ref=e114]
+          - list [ref=e115]:
+            - listitem [ref=e116]:
+              - link "Find Talent" [ref=e117] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e118]:
+              - link "Pricing" [ref=e119] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e120]:
+              - link "Resources" [ref=e121] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e122]:
+          - heading "Company" [level=4] [ref=e123]
+          - list [ref=e124]:
+            - listitem [ref=e125]:
+              - link "About" [ref=e126] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e127]:
+              - link "Blog" [ref=e128] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e129]:
+              - link "Contact" [ref=e130] [cursor=pointer]:
+                - /url: "#"
+      - generic [ref=e131]:
+        - paragraph [ref=e132]: © 2024 Career Fusion. All rights reserved.
+        - generic [ref=e133]:
+          - link "Privacy Policy" [ref=e134] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e135] [cursor=pointer]:
+            - /url: "#"
+          - link "Cookie Policy" [ref=e136] [cursor=pointer]:
+            - /url: "#"
