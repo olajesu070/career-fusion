@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 const pathItems = [
-  { label: "Complete-SQA-assessment", done: true },
-  { label: "Add-2-portfolio-projects", done: true },
+  { label: "Complete SQL assessment", done: true },
+  { label: "Add 2 portfolio projects", done: true },
   { label: "Communication module", done: true },
-  { label: "Mock interview - Software", done: false },
+  { label: "Mock interview — Software", done: false },
   { label: "Industry readiness module", done: false },
 ];
 
@@ -22,13 +22,13 @@ const jobs = [
     score: "84%",
   },
   {
-    letter: "D",
+    letter: "B",
     title: "Data Analyst Intern",
     meta: "Brightline - Lagos - Hybrid",
     score: "76%",
   },
   {
-    letter: "U",
+    letter: "M",
     title: "UX Research Asst.",
     meta: "Mosaic - London - Remote",
     score: "71%",
@@ -99,6 +99,33 @@ export default function StudentsSection() {
       </section>
 
       <section className="solution-section">
+        <div 
+          aria-hidden="true" 
+          style={{ 
+            position: 'absolute', 
+            top: 0, 
+            left: 0, 
+            width: '100%', 
+            height: '100%', 
+            zIndex: -1, 
+            pointerEvents: 'none'
+          }}
+        >
+          <Image 
+            src="/yellowArc.png"
+            alt=""
+            width={1440}
+            height={900}
+            style={{ 
+              position: 'absolute', 
+              top: '380px', 
+              left: '45%', 
+              transform: 'translateX(-50%)',
+              width: '1440px', 
+              height: 'auto'
+            }}
+          />
+        </div>
         <div className="page-container">
           <p className="eyebrow yellow">The Solution</p>
           <h2 className="solution-title">

@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -13,6 +14,12 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   return (
     <header className="site-header">
       <nav className="site-nav">
@@ -33,8 +40,31 @@ export default function Navbar() {
         <div className="nav-actions">
           <Link href="#" className="login-link">Login</Link>
           <Link href="#" className="signup-link">Sign-up</Link>
+          <button 
+            className={`mobile-menu-btn ${isOpen ? 'open' : ''}`} 
+            onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
+          >
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+            <span className="hamburger-line"></span>
+          </button>
         </div>
       </nav>
+
+      <div className={`mobile-menu ${isOpen ? 'is-open' : ''}`}>
+        <div className="mobile-nav-links">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className={`mobile-nav-link ${pathname === link.href ? "is-active" : ""}`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
     </header>
   );
 }
