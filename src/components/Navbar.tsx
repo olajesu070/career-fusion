@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -14,11 +14,8 @@ const navLinks = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(() => {
-    setIsOpen(false);
-  }, [pathname]);
+  const [openPath, setOpenPath] = useState<string | null>(null);
+  const isOpen = openPath === pathname;
 
   return (
     <header className="site-header">
@@ -42,7 +39,7 @@ export default function Navbar() {
           <Link href="#" className="signup-link">Sign-up</Link>
           <button 
             className={`mobile-menu-btn ${isOpen ? 'open' : ''}`} 
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => setOpenPath(isOpen ? null : pathname)}
             aria-label="Toggle menu"
           >
             <span className="hamburger-line"></span>

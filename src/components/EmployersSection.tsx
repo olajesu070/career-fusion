@@ -9,18 +9,16 @@ const tabs = {
     image: "/Frame 86 (2).png",
     alt: "Students using Career Fusion",
     title: "For Students",
-    copy:
-      "Track your employability score, build a verified portfolio, and get matched to opportunities you qualify for.",
+    copy: "Track your employability score, build a verified portfolio, and get matched to opportunities you qualify for.",
     path: "Discover Your Readiness \u2192 Build Your Score \u2192 Unlock Opportunities",
   },
   employers: {
     label: "Employers",
-    image: "/Frame 86 (1).png",
+    image: "/forEmployee.png",
     alt: "Employer reviewing Career Fusion candidates",
     title: "For Employers",
-    copy:
-      "Source verified job-ready candidates, review readiness signals, and match talent to roles with confidence.",
-    path: "Post Opportunities \u2192 Review Readiness \u2192 Hire Confidently",
+    copy: "Discover pre-screened talent by readiness band. No more CV noise, just verified, capable candidates",
+    path: "Define Readiness → Filter by Performance → Hire With Confidence",
   },
 } as const;
 
@@ -73,14 +71,39 @@ export default function EmployersSection() {
               {activeTab === "students" ? (
                 <svg viewBox="0 0 20 20" fill="none">
                   <path d="m3 7 7-3.5L17 7l-7 3.5L3 7Z" fill="currentColor" />
-                  <path d="M6.2 9.2v3.1c0 1.2 1.7 2.2 3.8 2.2s3.8-1 3.8-2.2V9.2" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
-                  <path d="M16.2 7.4v4" stroke="#fff" strokeWidth="1.4" strokeLinecap="round" />
+                  <path
+                    d="M6.2 9.2v3.1c0 1.2 1.7 2.2 3.8 2.2s3.8-1 3.8-2.2V9.2"
+                    stroke="#fff"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M16.2 7.4v4"
+                    stroke="#fff"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                  />
                 </svg>
               ) : (
                 <svg viewBox="0 0 20 20" fill="none">
-                  <path d="M7 6.2V4.9c0-.8.6-1.4 1.4-1.4h3.2c.8 0 1.4.6 1.4 1.4v1.3" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
-                  <path d="M3.8 7h12.4v8.5H3.8V7Z" fill="currentColor" stroke="#fff" strokeWidth="1.4" />
-                  <path d="M8.2 10.6h3.6" stroke="#fff" strokeWidth="1.4" strokeLinecap="round" />
+                  <path
+                    d="M7 6.2V4.9c0-.8.6-1.4 1.4-1.4h3.2c.8 0 1.4.6 1.4 1.4v1.3"
+                    stroke="#fff"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M3.8 7h12.4v8.5H3.8V7Z"
+                    fill="currentColor"
+                    stroke="#fff"
+                    strokeWidth="1.4"
+                  />
+                  <path
+                    d="M8.2 10.6h3.6"
+                    stroke="#fff"
+                    strokeWidth="1.4"
+                    strokeLinecap="round"
+                  />
                 </svg>
               )}
             </span>

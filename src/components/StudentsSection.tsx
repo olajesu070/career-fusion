@@ -49,7 +49,9 @@ export default function StudentsSection() {
                 know where they stand
               </h2>
               <div>
-                <span className="mini-bubble">Got another rejection today...</span>
+                <span className="mini-bubble">
+                  Got another rejection today...
+                </span>
               </div>
               <div>
                 <span className="reply-bubble">
@@ -58,25 +60,25 @@ export default function StudentsSection() {
               </div>
             </div>
             <div className="truth-image">
-                <Image
-                  src="/Frame 86.png"
-                  alt="Student unsure about readiness"
-                  fill
-                  loading="eager"
-                  sizes="(max-width: 1020px) 100vw, 576px"
-                />
+              <Image
+                src="/Frame 86.png"
+                alt="Student unsure about readiness"
+                fill
+                loading="eager"
+                sizes="(max-width: 1020px) 100vw, 576px"
+              />
             </div>
           </div>
 
           <div className="truth-grid employer">
             <div className="truth-image">
-                <Image
-                  src="/Frame 86 (1).png"
-                  alt="Employer struggling to screen candidates"
-                  fill
-                  loading="eager"
-                  sizes="(max-width: 1020px) 100vw, 576px"
-                />
+              <Image
+                src="/Frame 86 (1).png"
+                alt="Employer struggling to screen candidates"
+                fill
+                loading="eager"
+                sizes="(max-width: 1020px) 100vw, 576px"
+              />
             </div>
             <div>
               <p className="eyebrow yellow">The Employer Truth</p>
@@ -89,8 +91,8 @@ export default function StudentsSection() {
               </h2>
               <div>
                 <span className="employer-quote">
-                  &quot;I wish there was a score that told me who&apos;s actually
-                  ready...&quot;
+                  &quot;I wish there was a score that told me who&apos;s
+                  actually ready...&quot;
                 </span>
               </div>
             </div>
@@ -99,30 +101,29 @@ export default function StudentsSection() {
       </section>
 
       <section className="solution-section">
-        <div 
-          aria-hidden="true" 
-          style={{ 
-            position: 'absolute', 
-            top: 0, 
-            left: 0, 
-            width: '100%', 
-            height: '100%', 
-            zIndex: -1, 
-            pointerEvents: 'none'
+        <div
+          aria-hidden="true"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            zIndex: -1,
+            pointerEvents: "none",
           }}
         >
-          <Image 
+          <Image
             src="/yellowArc.png"
             alt=""
             width={1440}
             height={900}
-            style={{ 
-              position: 'absolute', 
-              top: '380px', 
-              left: '45%', 
-              transform: 'translateX(-50%)',
-              width: '1440px', 
-              height: 'auto'
+            style={{
+              position: "absolute",
+              top: "450px",
+              left: 0,
+              width: "1440px",
+              height: "auto",
             }}
           />
         </div>
@@ -132,8 +133,8 @@ export default function StudentsSection() {
             A new way to <span className="accent">measure employability</span>
           </h2>
           <p className="solution-copy">
-            CareerFusion gives you a clear a path to improve, readiness score,
-            and real opportunities based on your level. No more guessing. Just
+            CareerFusion gives you a clear path to improve, readiness score, and
+            real opportunities based on your level. No more guessing. Just
             progress.
           </p>
 

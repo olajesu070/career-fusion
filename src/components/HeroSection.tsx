@@ -19,13 +19,22 @@ const stats = [
   {
     value: "89%",
     label: "Placement rate",
-    note: "Among verifies Gold-band graduates",
+    note: "Among verified Gold-band graduates",
   },
 ];
 
 export default function HeroSection() {
   return (
     <section className="hero-section">
+      <div className="yellow-ribbons" aria-hidden="true">
+        <Image
+          src="/yellowBg.png"
+          alt=""
+          width={1440}
+          height={40}
+          className="yellow-ribbons-image"
+        />
+      </div>
       <div className="page-container">
         <div className="hero-grid">
           <div className="hero-copy">
@@ -37,7 +46,7 @@ export default function HeroSection() {
               <span className="accent">Faster</span>
             </h1>
             <p className="hero-subtitle">
-              Stop guessing. Start proving your employability with real as
+              Stop guessing. Start proving your employability with real job
               opportunities
             </p>
             <div className="button-row">

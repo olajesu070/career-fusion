@@ -31,9 +31,9 @@ const problems = [
 ];
 
 const candidates = [
-  { initials: "AO", name: "Amara O.",   role: "Software Engineer", match: "94%" },
-  { initials: "SJ", name: "Sarah J.",   role: "Data Analyst",      match: "89%" },
-  { initials: "BG", name: "Brian G.",   role: "UX Researcher",     match: "82%" },
+  { initials: "AO", name: "Amara O.", role: "Software Engineer", match: "94%" },
+  { initials: "SJ", name: "Sarah J.", role: "Data Analyst", match: "89%" },
+  { initials: "BG", name: "Brian G.", role: "UX Researcher", match: "82%" },
 ];
 
 export default function EmployersPage() {
@@ -48,20 +48,35 @@ export default function EmployersPage() {
               <div>
                 <h1 className="interior-hero-title">
                   Hire{" "}
-                  <span className="accent-yellow">job-ready<br />candidates</span>
-                  , not<br />just CVs
+                  <span className="accent-yellow">
+                    job-ready
+                    <br />
+                    candidates
+                  </span>
+                  , not
+                  <br />
+                  just CVs
                 </h1>
                 <p className="interior-hero-subtitle">
-                  Stop wasting time screening. Hire based on performance, not paper.
+                  Stop wasting time screening. Hire based on performance, not
+                  paper.
                 </p>
                 <div className="hero-tags">
-                  {["Pre-screened talent", "Submitted", "Better outcomes"].map((t) => (
-                    <span key={t} className="hero-tag">{t}</span>
-                  ))}
+                  {["Pre-screened talent", "Submitted", "Better outcomes"].map(
+                    (t) => (
+                      <span key={t} className="hero-tag">
+                        {t}
+                      </span>
+                    ),
+                  )}
                 </div>
                 <div className="button-row" style={{ marginTop: 24 }}>
-                  <a className="pill-button primary" href="#">Access Job-Ready Talent &rarr;</a>
-                  <a className="pill-button secondary" href="#">How It Works &rarr;</a>
+                  <a className="pill-button primary" href="#">
+                    Access Job-Ready Talent &rarr;
+                  </a>
+                  <a className="pill-button secondary" href="#">
+                    How It Works &rarr;
+                  </a>
                 </div>
               </div>
 
@@ -100,9 +115,16 @@ export default function EmployersPage() {
         {/* The Cost of Guessing */}
         <section className="truth-section" style={{ paddingTop: 80 }}>
           <div className="page-container">
-            <p className="eyebrow" style={{ textAlign: "center" }}>The Cost of Guessing</p>
-            <h2 className="truth-title" style={{ textAlign: "center", marginBottom: 56 }}>
-              CVs don&apos;t show performance.<br />Interviews don&apos;t scale.
+            <p className="eyebrow" style={{ textAlign: "center" }}>
+              The Cost of Guessing
+            </p>
+            <h2
+              className="truth-title"
+              style={{ textAlign: "center", marginBottom: 56 }}
+            >
+              CVs don&apos;t show performance.
+              <br />
+              Interviews don&apos;t scale.
             </h2>
             <div className="truth-grid">
               <div className="truth-image" style={{ position: "relative" }}>
@@ -113,15 +135,27 @@ export default function EmployersPage() {
                   sizes="(max-width:1020px) 100vw, 560px"
                   style={{ objectFit: "cover" }}
                 />
-                <span className="reply-bubble" style={{ position: "absolute", bottom: 28, left: 24, margin: 0, fontSize: 11 }}>
-                  &ldquo;I wish there was a score that told me who&apos;s actually ready…&rdquo;
+                <span
+                  className="reply-bubble"
+                  style={{
+                    position: "absolute",
+                    bottom: 28,
+                    left: 24,
+                    margin: 0,
+                    fontSize: 11,
+                  }}
+                >
+                  &ldquo;I wish there was a score that told me who&apos;s
+                  actually ready…&rdquo;
                 </span>
               </div>
               <div>
                 <div className="problem-list">
                   {problems.map((p) => (
                     <div className="problem-item" key={p.title}>
-                      <div className={`problem-icon ${p.variant}`}>{p.icon}</div>
+                      <div className={`problem-icon ${p.variant}`}>
+                        {p.icon}
+                      </div>
                       <div>
                         <p className="problem-item-title">{p.title}</p>
                         <p className="problem-item-text">{p.text}</p>
@@ -139,7 +173,8 @@ export default function EmployersPage() {
           <div className="page-container">
             <p className="eyebrow yellow">The Solution</p>
             <h2 className="solution-title">
-              Hire based on <span className="accent-green">what actually matters</span>
+              Hire based on{" "}
+              <span className="accent-green">what actually matters</span>
             </h2>
             <p className="solution-copy">
               Verified readiness. Performance-based hiring. Better outcomes.
@@ -164,9 +199,9 @@ export default function EmployersPage() {
                 </div>
                 <div className="skill-bars">
                   {[
-                    { label: "Technical Skills",    value: "91%", width: "91%" },
-                    { label: "Communication",       value: "84%", width: "84%" },
-                    { label: "Problem Solving",     value: "88%", width: "88%" },
+                    { label: "Technical Skills", value: "91%", width: "91%" },
+                    { label: "Communication", value: "84%", width: "84%" },
+                    { label: "Problem Solving", value: "88%", width: "88%" },
                   ].map((s) => (
                     <div className="skill-row" key={s.label}>
                       <span>{s.label}</span>
@@ -182,11 +217,15 @@ export default function EmployersPage() {
               {/* Performance Filtering */}
               <article className="product-card path">
                 <h3 className="card-title">Performance Filtering</h3>
-                <p className="card-subtitle">Location: Remote · Role: Software Eng.</p>
+                <p className="card-subtitle">
+                  Location: Remote · Role: Software Eng.
+                </p>
                 <div className="emp-candidate-list" style={{ marginTop: 20 }}>
                   {candidates.map((c) => (
                     <div className="emp-candidate-row" key={c.name}>
-                      <span>{c.name} · {c.role}</span>
+                      <span>
+                        {c.name} · {c.role}
+                      </span>
                       <span className="emp-match-badge">{c.match}</span>
                     </div>
                   ))}
@@ -210,7 +249,9 @@ export default function EmployersPage() {
                 <div className="progress-bar" style={{ marginTop: 16 }}>
                   <span style={{ width: "87%" }} />
                 </div>
-                <p className="emp-stat-label" style={{ marginTop: 8 }}>87% talent match rate</p>
+                <p className="emp-stat-label" style={{ marginTop: 8 }}>
+                  87% talent match rate
+                </p>
               </article>
             </div>
           </div>
@@ -226,8 +267,12 @@ export default function EmployersPage() {
                   Stop screening. Start hiring intelligently.
                 </p>
                 <div className="interior-cta-buttons">
-                  <a href="#" className="pill-button yellow">Get Started &rarr;</a>
-                  <a href="#" className="pill-button ghost">Get Early Access &rarr;</a>
+                  <a href="#" className="pill-button yellow">
+                    Get Started &rarr;
+                  </a>
+                  <a href="#" className="pill-button ghost">
+                    Get Early Access &rarr;
+                  </a>
                 </div>
               </div>
             </div>
