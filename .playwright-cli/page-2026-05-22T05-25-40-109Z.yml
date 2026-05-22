@@ -1,0 +1,221 @@
+- generic [active] [ref=e1]:
+  - img "Career Fusion" [ref=e3]
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - navigation [ref=e6]:
+        - img "Career Fusion" [ref=e8]
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "Students" [ref=e11] [cursor=pointer]:
+            - /url: /students
+          - link "Employers" [ref=e12] [cursor=pointer]:
+            - /url: /employers
+          - link "Institutions" [ref=e13] [cursor=pointer]:
+            - /url: /institutions
+          - link "Contact Us" [ref=e14] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e15]:
+          - link "Login" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+          - link "Sign-up" [ref=e17] [cursor=pointer]:
+            - /url: "#"
+    - main [ref=e18]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]:
+            - heading "Know Your Readiness. Get Hired Faster" [level=1] [ref=e23]:
+              - text: Know Your
+              - text: Readiness. Get Hired
+              - text: Faster
+            - paragraph [ref=e24]: Stop guessing. Start proving your employability with real job opportunities
+            - generic [ref=e25]:
+              - link "Start My Readiness Check" [ref=e26] [cursor=pointer]:
+                - /url: "#"
+                - text: Start My Readiness Check
+                - generic [ref=e27]: →
+              - link "Hire Job-Ready Talent" [ref=e28] [cursor=pointer]:
+                - /url: "#"
+                - text: Hire Job-Ready Talent
+                - generic [ref=e29]: →
+          - generic "Career readiness progress illustration" [ref=e30]:
+            - generic [ref=e31]:
+              - img [ref=e33]
+              - text: I keep getting rejected and I don't know why
+            - generic [ref=e36]:
+              - img [ref=e38]
+              - text: "Readiness Score updated: +12%"
+            - generic [ref=e41]: Okay... this feels different.
+            - generic [ref=e42]: This is the progress we look for.
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - generic [ref=e48]: 10K+
+            - generic [ref=e49]: Students
+            - generic [ref=e50]: Actively building their readiness profile
+          - generic [ref=e51]:
+            - generic [ref=e52]: 50+
+            - generic [ref=e53]: Universities
+            - generic [ref=e54]: Using live cohort dashboard
+          - generic [ref=e55]:
+            - generic [ref=e56]: 500+
+            - generic [ref=e57]: Employers
+            - generic [ref=e58]: Sourcing pre-screened talents
+          - generic [ref=e59]:
+            - generic [ref=e60]: 89%
+            - generic [ref=e61]: Placement rate
+            - generic [ref=e62]: Among verified Gold-band graduates
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - generic [ref=e66]:
+            - paragraph [ref=e67]: The Student Truth
+            - heading "Most students don't know where they stand" [level=2] [ref=e68]:
+              - text: Most students don't
+              - text: know where they stand
+            - generic [ref=e70]: Got another rejection today...
+            - generic [ref=e72]: Same... I don't even know what I'm missing.
+          - img "Student unsure about readiness" [ref=e74]
+        - generic [ref=e75]:
+          - img "Employer struggling to screen candidates" [ref=e77]
+          - generic [ref=e78]:
+            - paragraph [ref=e79]: The Employer Truth
+            - heading "Employers are struggling to find candidates..." [level=2] [ref=e80]:
+              - text: Employers are
+              - text: struggling to find
+              - text: candidates...
+            - generic [ref=e82]: "\"I wish there was a score that told me who's actually ready...\""
+      - generic [ref=e84]:
+        - paragraph [ref=e85]: The Solution
+        - heading "A new way to measure employability" [level=2] [ref=e86]
+        - paragraph [ref=e87]: CareerFusion gives you a clear path to improve, readiness score, and real opportunities based on your level. No more guessing. Just progress.
+        - generic [ref=e88]:
+          - article [ref=e89]:
+            - heading "Your Path to Improve" [level=3] [ref=e90]
+            - paragraph [ref=e91]: 3 of 7 milestones complete
+            - list [ref=e94]:
+              - listitem [ref=e95]:
+                - generic [ref=e97]: Complete SQL assessment
+              - listitem [ref=e98]:
+                - generic [ref=e100]: Add 2 portfolio projects
+              - listitem [ref=e101]:
+                - generic [ref=e103]: Communication module
+              - listitem [ref=e104]:
+                - generic [ref=e106]: Mock interview — Software
+              - listitem [ref=e107]:
+                - generic [ref=e109]: Industry readiness module
+          - article [ref=e110]:
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - heading "Your Readiness Score" [level=3] [ref=e113]
+                - paragraph [ref=e114]: Updated 2 days ago
+              - generic [ref=e115]: +12% this month
+            - generic [ref=e118]:
+              - strong [ref=e119]: 62%
+              - generic [ref=e120]: Readiness
+            - generic [ref=e121]:
+              - generic [ref=e122]:
+                - generic [ref=e123]: Technical Skills
+                - generic [ref=e124]: 78%
+              - generic [ref=e127]:
+                - generic [ref=e128]: Communication
+                - generic [ref=e129]: 54%
+              - generic [ref=e132]:
+                - generic [ref=e133]: Industry Knowledge
+                - generic [ref=e134]: 51%
+          - article [ref=e137]:
+            - generic [ref=e138]:
+              - generic [ref=e139]:
+                - heading "Opportunities for you" [level=3] [ref=e140]
+                - paragraph [ref=e141]: Based on your current score
+              - generic [ref=e142]: 23 matches
+            - generic [ref=e143]:
+              - generic [ref=e144]:
+                - generic [ref=e145]: T
+                - generic [ref=e146]:
+                  - paragraph [ref=e147]: Frontend Developer
+                  - paragraph [ref=e148]: TechCo - Remote
+                - generic [ref=e149]: 84%
+              - generic [ref=e150]:
+                - generic [ref=e151]: B
+                - generic [ref=e152]:
+                  - paragraph [ref=e153]: Data Analyst Intern
+                  - paragraph [ref=e154]: Brightline - Lagos - Hybrid
+                - generic [ref=e155]: 76%
+              - generic [ref=e156]:
+                - generic [ref=e157]: M
+                - generic [ref=e158]:
+                  - paragraph [ref=e159]: UX Research Asst.
+                  - paragraph [ref=e160]: Mosaic - London - Remote
+                - generic [ref=e161]: 71%
+            - link "View all 23 opportunities →" [ref=e162] [cursor=pointer]:
+              - /url: "#"
+      - generic [ref=e164]:
+        - paragraph [ref=e165]: How It Works
+        - tablist "How it works audience" [ref=e166]:
+          - tab "Students" [selected] [ref=e167] [cursor=pointer]
+          - tab "Employers" [ref=e169] [cursor=pointer]
+        - generic [ref=e170]:
+          - img "Students using Career Fusion" [ref=e172]
+          - article [ref=e173]:
+            - heading "For Students" [level=2] [ref=e175]
+            - paragraph [ref=e176]: Track your employability score, build a verified portfolio, and get matched to opportunities you qualify for.
+            - paragraph [ref=e177]: Discover Your Readiness → Build Your Score → Unlock Opportunities
+            - link "Learn More" [ref=e178] [cursor=pointer]:
+              - /url: "#"
+              - text: Learn More
+              - generic [ref=e179]: →
+      - generic [ref=e182]:
+        - img
+        - generic [ref=e183]:
+          - paragraph [ref=e184]: Ready To Get Started?
+          - heading "Start building your career advantage today" [level=2] [ref=e185]
+          - paragraph [ref=e186]: Join thousands of students discovering the employability strengths in under 5 minutes
+          - generic [ref=e187]:
+            - link "Start Free Assessment" [ref=e188] [cursor=pointer]:
+              - /url: "#"
+              - text: Start Free Assessment
+              - generic [ref=e189]: →
+            - link "Learn More" [ref=e190] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=e191]:
+            - generic [ref=e192]: ✓ No credit card required
+            - generic [ref=e193]: ✓ Takes less than 5 minutes
+            - generic [ref=e194]: ✓ 10,000+ students trust us
+        - img "Career Fusion community" [ref=e196]
+    - contentinfo [ref=e197]:
+      - generic [ref=e198]:
+        - generic [ref=e199]:
+          - generic [ref=e200]:
+            - img "Career Fusion" [ref=e201]
+            - paragraph [ref=e202]: Bridging the gap between education, careers and opportunity through verified employability intelligence
+            - paragraph [ref=e203]: Follow us
+            - generic "Social links" [ref=e204]:
+              - link "X" [ref=e205] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e206]
+              - link "Instagram" [ref=e208] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e209]
+              - link "LinkedIn" [ref=e211] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e212]
+          - generic [ref=e214]:
+            - heading "Platforms" [level=2] [ref=e215]
+            - navigation "Platform links" [ref=e216]:
+              - link "Login" [ref=e217] [cursor=pointer]:
+                - /url: "#"
+              - link "Sign-up" [ref=e218] [cursor=pointer]:
+                - /url: "#"
+              - link "Contact Us" [ref=e219] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e220]:
+            - heading "For Users" [level=2] [ref=e221]
+            - navigation "User links" [ref=e222]:
+              - link "Students" [ref=e223] [cursor=pointer]:
+                - /url: "#"
+              - link "Employers" [ref=e224] [cursor=pointer]:
+                - /url: "#"
+              - link "Institutions" [ref=e225] [cursor=pointer]:
+                - /url: "#"
+        - img [ref=e227]
+  - button "Open Next.js Dev Tools" [ref=e233] [cursor=pointer]:
+    - img [ref=e234]
