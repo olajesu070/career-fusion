@@ -5,6 +5,16 @@ export default function CTASection() {
     <section className="cta-section">
       <div className="page-container">
         <div className="cta-panel">
+          <svg
+            className="cta-arch"
+            viewBox="0 0 1200 375"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M720 0C806 35 914 165 1240 410L1200 410L1200 0Z" />
+          </svg>
+
           <div className="cta-copy">
             <p className="cta-eyebrow">Ready To Get Started?</p>
             <h2 className="cta-title">
