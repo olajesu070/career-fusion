@@ -32,7 +32,7 @@ export default function PageLoader() {
   return (
     <div className={`page-loader ${fade ? "page-loader--out" : ""}`}>
       <Image
-        src="/logo.png"
+        src="/svgNavLogo.svg"
         alt="Career Fusion"
         width={120}
         height={67}

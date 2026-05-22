@@ -64,9 +64,9 @@ a {
   overflow: hidden;
 }
 
+/* Base yellow SVG positioning shared by every supported desktop zoom range. */
 .yellow-ribbons-image {
   position: absolute;
-  top: calc(437px - 42.5vw);
   left: 50%;
   width: 100vw;
   height: auto;
@@ -74,19 +74,50 @@ a {
   transform: translateX(-50%);
 }
 
-@media (min-width: 2050px) {
+/* 150% desktop zoom range. */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .yellow-ribbons-image {
+    top: calc(497px - 42.5vw);
+  }
+}
+
+/* 125% desktop zoom range. */
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .yellow-ribbons-image {
+    top: calc(470px - 42.5vw);
+  }
+}
+
+/* 110% desktop zoom range. */
+@media (min-width: 1600px) and (max-width: 1849px) {
+  .yellow-ribbons-image {
+    top: calc(455px - 42.5vw);
+  }
+}
+
+/* 100% desktop zoom range. */
+@media (min-width: 1850px) and (max-width: 2049px) {
+  .yellow-ribbons-image {
+    top: calc(437px - 42.5vw);
+  }
+}
+
+/* Adjust yellow SVG placement for the 90% desktop zoom range. */
+@media (min-width: 2050px) and (max-width: 2249px) {
+  .yellow-ribbons-image {
+    top: calc(340px - 39.1vw);
+  }
+}
+
+/* Adjust yellow SVG placement for the 80% desktop zoom range. */
+@media (min-width: 2250px) and (max-width: 2400px) {
   .yellow-ribbons-image {
     top: calc(340px - 42.5vw);
   }
 }
 
-@media (min-width: 2250px) {
-  .yellow-ribbons-image {
-    top: calc(290px - 42.5vw);
-  }
-}
-
-@media (max-width: 1439px) {
+/* Hide yellow SVG above 150% zoom or below 80% zoom. */
+@media (max-width: 1279px), (min-width: 2401px) {
   .yellow-ribbons {
     display: none;
   }
@@ -1111,14 +1142,19 @@ a {
 .cta-arch {
   position: absolute;
   z-index: 0;
-  inset: 0;
-  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: min(66%, 790px);
   height: 100%;
   pointer-events: none;
 }
 
-.cta-arch path {
-  fill: #2f7b35;
+.cta-arch-img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  object-position: center;
 }
 
 .cta-copy {
@@ -1200,7 +1236,7 @@ a {
 
 .cta-collage {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   flex: 0 0 320px;
   height: auto;
   align-self: stretch;
@@ -1213,6 +1249,8 @@ a {
   object-fit: cover;
   object-position: center top;
   display: block;
+  background: transparent;
+  margin-left: -50px;
 }
 
 .site-footer {
@@ -1646,6 +1684,10 @@ a {
 
   .cta-panel {
     border-radius: 34px;
+  }
+
+  .cta-arch {
+    display: none;
   }
 
   .cta-copy {

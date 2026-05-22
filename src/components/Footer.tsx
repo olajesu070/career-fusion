@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-about">
             <Image
-              src="/footerLogo.png"
+              src="/svgFooterLogo.svg"
               alt="Career Fusion"
               width={91}
               height={51}
@@ -83,7 +83,7 @@ export default function Footer() {
           aria-hidden="true"
         >
           <Image
-            src="/footerText.png"
+            src="/svgFooterText.svg"
             alt="Career Fusion"
             width={1920}
             height={51}

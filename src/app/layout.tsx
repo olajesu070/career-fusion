@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   description:
     "Career Fusion connects students and employers. Prove your potential or hire top talent.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/svgNavLogo.svg",
+    shortcut: "/svgNavLogo.png",
+    apple: "/svgNavLogo.png",
   },
 };
 

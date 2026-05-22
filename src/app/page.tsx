@@ -13,11 +13,12 @@ export default function Home() {
       <main className="home-main">
         <div className="yellow-ribbons" aria-hidden="true">
           <Image
-            src="/yellowBg.png"
+            src="/svgYellowBg.svg"
             alt=""
             width={1440}
             height={1553}
             className="yellow-ribbons-image"
+            loading="eager"
           />
         </div>
         <HeroSection />

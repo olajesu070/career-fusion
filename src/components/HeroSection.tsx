@@ -66,9 +66,25 @@ export default function HeroSection() {
             <div className="hero-bubble top">
               <span className="bubble-icon sad" aria-hidden="true">
                 <svg viewBox="0 0 20 20" fill="none">
-                  <circle cx="10" cy="10" r="8.4" stroke="currentColor" strokeWidth="1.7" />
-                  <path d="M6.8 8.1h.1M13.1 8.1h.1" stroke="currentColor" strokeWidth="2.1" strokeLinecap="round" />
-                  <path d="M6.7 13.3c1.9-1.7 4.7-1.7 6.6 0" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+                  <circle
+                    cx="10"
+                    cy="10"
+                    r="8.4"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                  />
+                  <path
+                    d="M6.8 8.1h.1M13.1 8.1h.1"
+                    stroke="currentColor"
+                    strokeWidth="2.1"
+                    strokeLinecap="round"
+                  />
+                  <path
+                    d="M6.7 13.3c1.9-1.7 4.7-1.7 6.6 0"
+                    stroke="currentColor"
+                    strokeWidth="1.7"
+                    strokeLinecap="round"
+                  />
                 </svg>
               </span>
               I keep getting rejected and I don&apos;t know why
@@ -76,8 +92,20 @@ export default function HeroSection() {
             <div className="hero-bubble score">
               <span className="score-icon" aria-hidden="true">
                 <svg viewBox="0 0 20 20" fill="none">
-                  <path d="M3.4 13.2 7.3 9.3l3.2 3.2 5.8-5.8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                  <path d="M12 6.7h4.3V11" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  <path
+                    d="M3.4 13.2 7.3 9.3l3.2 3.2 5.8-5.8"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                  <path
+                    d="M12 6.7h4.3V11"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </span>
               Readiness Score updated: +12%
