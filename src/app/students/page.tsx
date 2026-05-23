@@ -24,9 +24,24 @@ const skills = [
 ];
 
 const jobs = [
-  { letter: "T", title: "Frontend Developer", meta: "TechCo - Remote", score: "84%" },
-  { letter: "B", title: "Data Analyst Intern", meta: "Brightline - Lagos - Hybrid", score: "76%" },
-  { letter: "M", title: "UX Research Asst.", meta: "Mosaic - London - Remote", score: "71%" },
+  {
+    letter: "T",
+    title: "Frontend Developer",
+    meta: "TechCo - Remote",
+    score: "84%",
+  },
+  {
+    letter: "B",
+    title: "Data Analyst Intern",
+    meta: "Brightline - Lagos - Hybrid",
+    score: "76%",
+  },
+  {
+    letter: "M",
+    title: "UX Research Asst.",
+    meta: "Mosaic - London - Remote",
+    score: "71%",
+  },
 ];
 
 export default function StudentsPage() {
@@ -43,7 +58,6 @@ export default function StudentsPage() {
       />
       <Navbar />
       <main className="home-main student-main">
-
         <section className="student-hero interior-hero">
           <div className="page-container student-hero-container">
             <div className="student-hero-copy">
@@ -55,11 +69,13 @@ export default function StudentsPage() {
                 <span className="accent-yellow">employability</span>
               </h1>
               <p className="interior-hero-subtitle">
-                Know exactly how job-ready you are - and take control of your future
+                Know exactly how job-ready you are - and take control of your
+                future
               </p>
               <div className="button-row">
                 <a className="pill-button primary" href="#">
-                  Start My Readiness Check <span aria-hidden="true">&rarr;</span>
+                  Start My Readiness Check{" "}
+                  <span aria-hidden="true">&rarr;</span>
                 </a>
                 <a className="pill-button secondary" href="#">
                   How it Works <span aria-hidden="true">&rarr;</span>
@@ -75,7 +91,7 @@ export default function StudentsPage() {
                 priority
                 sizes="(max-width: 1020px) 100vw, 607px"
               />
-              
+
               <div className="hero-floating-card">
                 <div className="floating-card-icon">
                   <div className="circle-progress">
@@ -111,7 +127,10 @@ export default function StudentsPage() {
                 className="truth-half-circle"
                 aria-hidden="true"
               />
-              <div className="student-truth-reference" aria-label="Frustrated student">
+              <div
+                className="student-truth-reference"
+                aria-label="Frustrated student"
+              >
                 <Image
                   src="/studentTruthImage.png"
                   alt=""
@@ -137,11 +156,19 @@ export default function StudentsPage() {
                   feel uncertain?
                 </h2>
                 <ul className="student-bullets">
-                  <li className="student-bullet">You don&apos;t know if you&apos;re ready</li>
-                  <li className="student-bullet">You don&apos;t know what you&apos;re missing</li>
-                  <li className="student-bullet">You don&apos;t know why you&apos;re getting rejected</li>
+                  <li className="student-bullet">
+                    You don&apos;t know if you&apos;re ready
+                  </li>
+                  <li className="student-bullet">
+                    You don&apos;t know what you&apos;re missing
+                  </li>
+                  <li className="student-bullet">
+                    You don&apos;t know why you&apos;re getting rejected
+                  </li>
                 </ul>
-                <p className="student-truth-punchline">And no one is telling you</p>
+                <p className="student-truth-punchline">
+                  And no one is telling you
+                </p>
               </div>
             </div>
           </div>
@@ -197,7 +224,9 @@ export default function StudentsPage() {
                   <ul className="check-list">
                     {pathItems.map((item) => (
                       <li className={item.done ? "done" : ""} key={item.label}>
-                        <span className={`check-dot ${item.done ? "done" : ""}`} />
+                        <span
+                          className={`check-dot ${item.done ? "done" : ""}`}
+                        />
                         <span className="check-label">{item.label}</span>
                       </li>
                     ))}
@@ -208,7 +237,9 @@ export default function StudentsPage() {
                   <div className="match-header">
                     <div>
                       <h3 className="card-title">Opportunities for you</h3>
-                      <p className="card-subtitle">Based on your current score</p>
+                      <p className="card-subtitle">
+                        Based on your current score
+                      </p>
                     </div>
                     <span className="match-pill">23 matches</span>
                   </div>
@@ -225,7 +256,8 @@ export default function StudentsPage() {
                     ))}
                   </div>
                   <a href="#" className="jobs-link">
-                    View all 23 opportunities <span aria-hidden="true">&rarr;</span>
+                    View all 23 opportunities{" "}
+                    <span aria-hidden="true">&rarr;</span>
                   </a>
                 </article>
               </div>
@@ -242,9 +274,12 @@ export default function StudentsPage() {
           <div className="page-container">
             <div className="interior-cta-panel">
               <div className="interior-cta-content">
-                <h2 className="interior-cta-title">Start proving your readiness today</h2>
+                <h2 className="interior-cta-title">
+                  Start proving your readiness today
+                </h2>
                 <p className="interior-cta-text">
-                  Join thousands of students discovering the employability strengths in under 5 minutes
+                  Join thousands of students discovering the employability
+                  strengths in under 5 minutes
                 </p>
                 <div className="interior-cta-buttons">
                   <a href="#" className="pill-button yellow">
