@@ -4,274 +4,234 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "For Employers — Career Fusion",
+  title: "For Employers - Career Fusion",
   description:
     "Hire job-ready candidates, not just CVs. Access pre-verified talent with proven readiness scores.",
 };
 
-const problems = [
+const costItems = [
   {
-    icon: "!",
-    variant: "red",
+    icon: "applications",
     title: "Too many applications.",
     text: "Hours lost screening profiles that don't match actual job requirements.",
   },
   {
-    icon: "N",
-    variant: "orange",
+    icon: "signal",
     title: "Too little signal.",
     text: "CVs and university grades simply don't reliably predict workplace readiness.",
   },
   {
-    icon: "↑",
-    variant: "orange",
+    icon: "risk",
     title: "Too much risk.",
-    text: "Bad hires cost around 30%+ of an employee's annual salary.",
+    text: "Bad hires cost upward of 30%+ of an employee's annual salary.",
   },
 ];
 
-const candidates = [
-  { initials: "AO", name: "Amara O.", role: "Software Engineer", match: "94%" },
-  { initials: "SJ", name: "Sarah J.", role: "Data Analyst", match: "89%" },
-  { initials: "BG", name: "Brian G.", role: "UX Researcher", match: "82%" },
+const readinessBars = [
+  { label: "Technical", value: "82%", width: "82%" },
+  { label: "Communication", value: "74%", width: "74%" },
+  { label: "Industry", value: "68%", width: "68%" },
+];
+
+const candidateRows = [
+  { avatar: "SA", name: "Sales Analyst", match: "81%", variant: "cyan" },
+  { avatar: "DE", name: "Data Engineer", match: "79%", variant: "photo" },
 ];
 
 export default function EmployersPage() {
   return (
-    <div className="home-page">
+    <div className="home-page employer-page">
       <Navbar />
-      <main className="home-main">
-        {/* Hero */}
-        <section className="interior-hero">
-          <div className="page-container">
-            <div className="interior-hero-grid">
-              <div>
-                <h1 className="interior-hero-title">
-                  Hire{" "}
-                  <span className="accent-yellow">
-                    job-ready
-                    <br />
-                    candidates
-                  </span>
-                  , not
-                  <br />
-                  just CVs
-                </h1>
-                <p className="interior-hero-subtitle">
-                  Stop wasting time screening. Hire based on performance, not
-                  paper.
-                </p>
-                <div className="hero-tags">
-                  {["Pre-screened talent", "Submitted", "Better outcomes"].map(
-                    (t) => (
-                      <span key={t} className="hero-tag">
-                        {t}
-                      </span>
-                    ),
-                  )}
-                </div>
-                <div className="button-row" style={{ marginTop: 24 }}>
-                  <a className="pill-button primary" href="#">
-                    Access Job-Ready Talent &rarr;
-                  </a>
-                  <a className="pill-button secondary" href="#">
-                    How It Works &rarr;
-                  </a>
+      <main className="home-main employer-main">
+        <section className="employer-hero">
+          <div className="page-container employer-hero-grid">
+            <div className="employer-hero-copy">
+              <h1 className="employer-hero-title">
+                Hire <span>job-ready candidates</span>, not
+                <br />
+                just CVs
+              </h1>
+              <p className="employer-hero-subtitle">
+                Stop wasting time screening. Hire based on performance, not paper.
+              </p>
+              <div className="employer-tags" aria-label="Employer benefits">
+                <span>Pre-assessed talent</span>
+                <span>Faster hiring</span>
+                <span>Better outcomes</span>
+              </div>
+              <div className="employer-hero-actions">
+                <a className="pill-button primary" href="#">
+                  Access Job-Ready Talent <span aria-hidden="true">&rarr;</span>
+                </a>
+                <a className="pill-button secondary" href="#">
+                  How it Works <span aria-hidden="true">&rarr;</span>
+                </a>
+              </div>
+            </div>
+
+            <div className="employer-hero-visual">
+              <Image
+                src="/employeeHeroImage.jpg"
+                alt="Employer interviewing a job-ready candidate"
+                fill
+                priority
+                sizes="(max-width: 1020px) 100vw, 610px"
+                className="employer-hero-image"
+              />
+
+              <div className="employer-match-card hero-match-card">
+                <div className="match-initials">AO</div>
+                <div>
+                  <strong>Amara O.</strong>
+                  <span className="match-status">84% Match</span>
                 </div>
               </div>
 
-              <div className="interior-hero-visual">
-                <div className="interior-hero-img-wrap">
-                  <Image
-                    src="/Frame 86 (2).png"
-                    alt="Employer interviewing a candidate"
-                    fill
-                    priority
-                    sizes="(max-width:1020px) 100vw, 560px"
-                    style={{ objectFit: "cover" }}
-                  />
+              <div className="employer-match-card hero-profile-card">
+                <div className="profile-avatar" aria-hidden="true" />
+                <div>
+                  <strong>Sarah J.</strong>
+                  <span>UX Designer</span>
                 </div>
-                <div className="hero-avatar-stack">
-                  <div className="avatar-pill">
-                    <div className="avatar-circle green">AO</div>
-                    <div className="avatar-pill-text">
-                      <strong>Amara O.</strong>
-                      <span>@94% match</span>
-                    </div>
-                  </div>
-                  <div className="avatar-pill">
-                    <div className="avatar-circle navy">SJ</div>
-                    <div className="avatar-pill-text">
-                      <strong>Sarah J.</strong>
-                      <span>HR Analyst</span>
-                    </div>
-                  </div>
-                </div>
+                <span className="small-match-badge">84% match</span>
               </div>
             </div>
           </div>
         </section>
 
-        {/* The Cost of Guessing */}
-        <section className="truth-section" style={{ paddingTop: 80 }}>
+        <section className="employer-cost-section">
           <div className="page-container">
-            <p className="eyebrow" style={{ textAlign: "center" }}>
-              The Cost of Guessing
-            </p>
-            <h2
-              className="truth-title"
-              style={{ textAlign: "center", marginBottom: 56 }}
-            >
+            <p className="employer-eyebrow">The Cost of Guessing</p>
+            <h2 className="employer-section-title">
               CVs don&apos;t show performance.
               <br />
               Interviews don&apos;t scale.
             </h2>
-            <div className="truth-grid">
-              <div className="truth-image" style={{ position: "relative" }}>
+
+            <div className="employer-cost-grid">
+              <div className="cv-image-card">
                 <Image
-                  src="/Frame 86.png"
-                  alt="Interview scenario"
+                  src="/cvImage.png"
+                  alt="Employer reviewing a CV"
                   fill
-                  sizes="(max-width:1020px) 100vw, 560px"
-                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 1020px) 100vw, 590px"
+                  className="cv-image"
                 />
-                <span
-                  className="reply-bubble"
-                  style={{
-                    position: "absolute",
-                    bottom: 28,
-                    left: 24,
-                    margin: 0,
-                    fontSize: 11,
-                  }}
-                >
-                  &ldquo;I wish there was a score that told me who&apos;s
-                  actually ready…&rdquo;
-                </span>
-              </div>
-              <div>
-                <div className="problem-list">
-                  {problems.map((p) => (
-                    <div className="problem-item" key={p.title}>
-                      <div className={`problem-icon ${p.variant}`}>
-                        {p.icon}
-                      </div>
-                      <div>
-                        <p className="problem-item-title">{p.title}</p>
-                        <p className="problem-item-text">{p.text}</p>
-                      </div>
-                    </div>
-                  ))}
+                <div className="cv-quote">
+                  &quot;I wish there was a score that told me who&apos;s actually ready.&quot;
                 </div>
+              </div>
+
+              <div className="employer-cost-list">
+                {costItems.map((item) => (
+                  <article className="employer-cost-item" key={item.title}>
+                    <span className={`cost-icon ${item.icon}`} aria-hidden="true" />
+                    <div>
+                      <h3>{item.title}</h3>
+                      <p>{item.text}</p>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
-        {/* The Solution */}
-        <section className="solution-section">
+        <section className="employer-solution-section">
           <div className="page-container">
-            <p className="eyebrow yellow">The Solution</p>
-            <h2 className="solution-title">
-              Hire based on{" "}
-              <span className="accent-green">what actually matters</span>
+            <p className="employer-eyebrow">The Solution</p>
+            <h2 className="employer-solution-title">
+              Hire based on <span>what actually</span>
+              <br />
+              <span>matters</span>
             </h2>
-            <p className="solution-copy">
-              Verified readiness. Performance-based hiring. Better outcomes.
+            <p className="employer-solution-copy">
+              Verified readiness. Performance-based filtering. Better outcomes.
             </p>
 
-            <div className="solution-cards">
-              {/* Verified Readiness */}
-              <article className="product-card score-card">
-                <div className="score-head">
-                  <div>
-                    <h3 className="card-title">Verified Readiness</h3>
-                    <p className="card-subtitle">Pre-screened profile</p>
-                  </div>
-                  <span className="score-pill">Verified</span>
+            <div className="employer-solution-cards">
+              <article className="employer-product-card verified-card">
+                <div className="employer-card-head">
+                  <h3>Verified Readiness</h3>
+                  <span>Pre-assessed</span>
                 </div>
-                <div className="emp-card-profile">
-                  <div className="emp-avatar">AO</div>
+
+                <div className="verified-profile">
+                  <div className="profile-avatar" aria-hidden="true" />
                   <div>
-                    <p className="emp-name">Amara O.</p>
-                    <p className="emp-role">Software Engineering Graduate</p>
+                    <strong>Amara O.</strong>
+                    <p>Software Engineer</p>
                   </div>
                 </div>
-                <div className="skill-bars">
-                  {[
-                    { label: "Technical Skills", value: "91%", width: "91%" },
-                    { label: "Communication", value: "84%", width: "84%" },
-                    { label: "Problem Solving", value: "88%", width: "88%" },
-                  ].map((s) => (
-                    <div className="skill-row" key={s.label}>
-                      <span>{s.label}</span>
-                      <span>{s.value}</span>
-                      <div className="skill-meter">
-                        <span style={{ width: s.width }} />
+
+                <div className="verified-bars">
+                  {readinessBars.map((bar) => (
+                    <div className="verified-bar-row" key={bar.label}>
+                      <span>{bar.label}</span>
+                      <span>{bar.value}</span>
+                      <div>
+                        <i style={{ width: bar.width }} />
                       </div>
                     </div>
                   ))}
                 </div>
               </article>
 
-              {/* Performance Filtering */}
-              <article className="product-card path">
-                <h3 className="card-title">Performance Filtering</h3>
-                <p className="card-subtitle">
-                  Location: Remote · Role: Software Eng.
-                </p>
-                <div className="emp-candidate-list" style={{ marginTop: 20 }}>
-                  {candidates.map((c) => (
-                    <div className="emp-candidate-row" key={c.name}>
-                      <span>
-                        {c.name} · {c.role}
+              <article className="employer-product-card filtering-card">
+                <h3>Performance Filtering</h3>
+                <div className="filter-pills">
+                  <span>Min score: 70%</span>
+                  <span>Skills: SQL, Python</span>
+                  <span>Location: Remote</span>
+                </div>
+                <p className="filter-showing">Showing 14 of 142 candidates</p>
+                <div className="candidate-list">
+                  {candidateRows.map((candidate) => (
+                    <div className="candidate-row" key={candidate.name}>
+                      <span className={`candidate-avatar ${candidate.variant}`}>
+                        {candidate.avatar}
                       </span>
-                      <span className="emp-match-badge">{c.match}</span>
+                      <strong>{candidate.name}</strong>
+                      <span>{candidate.match}</span>
                     </div>
                   ))}
                 </div>
               </article>
 
-              {/* Better Outcomes */}
-              <article className="product-card jobs">
-                <h3 className="card-title">Better Outcomes</h3>
-                <p className="card-subtitle">Average across verified hires</p>
-                <div className="emp-outcomes-stats">
-                  <div>
-                    <p className="emp-stat-big">12</p>
-                    <p className="emp-stat-label">days to hire</p>
+              <article className="employer-product-card outcomes-card">
+                <h3>Better Outcomes</h3>
+                <div className="outcome-panel">
+                  <div className="outcome-stat">
+                    <strong>12</strong>
+                    <span>days</span>
+                    <del>42 days</del>
                   </div>
-                  <div>
-                    <p className="emp-stat-big">87%</p>
-                    <p className="emp-stat-label">30-day retention</p>
+                  <p>Avg time-to-hire <span>Industry average</span></p>
+                  <div className="outcome-progress-head">
+                    <span>71% faster</span>
+                    <b>+71%</b>
+                  </div>
+                  <div className="outcome-progress">
+                    <i />
                   </div>
                 </div>
-                <div className="progress-bar" style={{ marginTop: 16 }}>
-                  <span style={{ width: "87%" }} />
-                </div>
-                <p className="emp-stat-label" style={{ marginTop: 8 }}>
-                  87% talent match rate
-                </p>
               </article>
             </div>
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="interior-cta">
+        <section className="employer-cta interior-cta">
           <div className="page-container">
             <div className="interior-cta-panel">
               <div className="interior-cta-content">
                 <h2 className="interior-cta-title">Access job-ready talent</h2>
-                <p className="interior-cta-text">
-                  Stop screening. Start hiring intelligently.
-                </p>
+                <p className="interior-cta-text">Stop screening. Start hiring ready.</p>
                 <div className="interior-cta-buttons">
                   <a href="#" className="pill-button yellow">
-                    Get Started &rarr;
+                    Get Started <span aria-hidden="true">&rarr;</span>
                   </a>
                   <a href="#" className="pill-button ghost">
-                    Get Early Access &rarr;
+                    Get Early Access
                   </a>
                 </div>
               </div>

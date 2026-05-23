@@ -151,6 +151,7 @@ a {
   display: flex;
   align-items: center;
   gap: 44px;
+  height: 100%;
 }
 
 .nav-link {
@@ -159,25 +160,34 @@ a {
   font-size: 14px;
   font-weight: 400;
   text-decoration: none;
-  padding: 12px 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  transition: color 160ms ease;
+}
+
+.nav-link.is-active {
+  color: var(--brand-ink);
+  font-weight: 500;
+  /* margin-top: 20px; */
 }
 
 .nav-link::after {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 4px;
+  bottom: -15px;
   width: 0;
-  height: 4px;
+  height: 3px;
   border-radius: 999px;
   background: var(--brand-green);
   transform: translateX(-50%);
   transition: width 160ms ease;
 }
 
-.nav-link:hover::after,
 .nav-link.is-active::after {
-  width: 61px;
+  width: 100%;
+  padding: 0 30px;
 }
 
 .nav-actions {
