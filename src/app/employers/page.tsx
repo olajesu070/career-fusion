@@ -11,17 +11,23 @@ export const metadata: Metadata = {
 
 const costItems = [
   {
-    icon: "applications",
+    icon: "/application.png",
+    iconWidth: 18,
+    iconHeight: 18,
     title: "Too many applications.",
     text: "Hours lost screening profiles that don't match actual job requirements.",
   },
   {
-    icon: "signal",
+    icon: "/noSignal.png",
+    iconWidth: 21,
+    iconHeight: 20,
     title: "Too little signal.",
     text: "CVs and university grades simply don't reliably predict workplace readiness.",
   },
   {
-    icon: "risk",
+    icon: "/risk.png",
+    iconWidth: 20,
+    iconHeight: 12,
     title: "Too much risk.",
     text: "Bad hires cost upward of 30%+ of an employee's annual salary.",
   },
@@ -34,8 +40,18 @@ const readinessBars = [
 ];
 
 const candidateRows = [
-  { avatar: "SA", name: "Sales Analyst", match: "81%", variant: "cyan" },
-  { avatar: "DE", name: "Data Engineer", match: "79%", variant: "photo" },
+  {
+    avatar: "/segunAvatar.png",
+    avatarAlt: "Segun candidate avatar",
+    name: "Sales Analyst",
+    match: "81%",
+  },
+  {
+    avatar: "/amaraAvatar.png",
+    avatarAlt: "Amara candidate avatar",
+    name: "Data Engineer",
+    match: "79%",
+  },
 ];
 
 export default function EmployersPage() {
@@ -52,7 +68,8 @@ export default function EmployersPage() {
                 just CVs
               </h1>
               <p className="employer-hero-subtitle">
-                Stop wasting time screening. Hire based on performance, not paper.
+                Stop wasting time screening. Hire based on performance, not
+                paper.
               </p>
               <div className="employer-tags" aria-label="Employer benefits">
                 <span>Pre-assessed talent</span>
@@ -88,7 +105,13 @@ export default function EmployersPage() {
               </div>
 
               <div className="employer-match-card hero-profile-card">
-                <div className="profile-avatar" aria-hidden="true" />
+                <Image
+                  src="/serahJ.png"
+                  alt="Sarah J. avatar"
+                  width={48}
+                  height={48}
+                  className="hero-profile-avatar"
+                />
                 <div>
                   <strong>Sarah J.</strong>
                   <span>UX Designer</span>
@@ -118,14 +141,23 @@ export default function EmployersPage() {
                   className="cv-image"
                 />
                 <div className="cv-quote">
-                  &quot;I wish there was a score that told me who&apos;s actually ready.&quot;
+                  &quot;I wish there was a score that told me who&apos;s
+                  actually ready.&quot;
                 </div>
               </div>
 
               <div className="employer-cost-list">
                 {costItems.map((item) => (
                   <article className="employer-cost-item" key={item.title}>
-                    <span className={`cost-icon ${item.icon}`} aria-hidden="true" />
+                    <span className="cost-icon" aria-hidden="true">
+                      <Image
+                        src={item.icon}
+                        alt=""
+                        width={item.iconWidth}
+                        height={item.iconHeight}
+                        className="cost-icon-image"
+                      />
+                    </span>
                     <div>
                       <h3>{item.title}</h3>
                       <p>{item.text}</p>
@@ -157,7 +189,13 @@ export default function EmployersPage() {
                 </div>
 
                 <div className="verified-profile">
-                  <div className="profile-avatar" aria-hidden="true" />
+                  <Image
+                    src="/amaraAvatar.png"
+                    alt="Amara candidate avatar"
+                    width={40}
+                    height={40}
+                    className="verified-avatar"
+                  />
                   <div>
                     <strong>Amara O.</strong>
                     <p>Software Engineer</p>
@@ -179,22 +217,30 @@ export default function EmployersPage() {
 
               <article className="employer-product-card filtering-card">
                 <h3>Performance Filtering</h3>
-                <div className="filter-pills">
-                  <span>Min score: 70%</span>
-                  <span>Skills: SQL, Python</span>
-                  <span>Location: Remote</span>
-                </div>
-                <p className="filter-showing">Showing 14 of 142 candidates</p>
-                <div className="candidate-list">
-                  {candidateRows.map((candidate) => (
-                    <div className="candidate-row" key={candidate.name}>
-                      <span className={`candidate-avatar ${candidate.variant}`}>
-                        {candidate.avatar}
-                      </span>
-                      <strong>{candidate.name}</strong>
-                      <span>{candidate.match}</span>
-                    </div>
-                  ))}
+
+                <div className="filtering-panel">
+                  <div className="filter-pills">
+                    <span>Min score: 70%</span>
+                    <span>Skills: SQL, Python</span>
+                    <span>Location: Remote</span>
+                  </div>
+                  <p className="filter-showing">Showing 14 of 142 candidates</p>
+                  <div className="candidate-list">
+                    {candidateRows.map((candidate) => (
+                      <div className="candidate-row" key={candidate.name}>
+                        <span className="candidate-avatar">
+                          <Image
+                            src={candidate.avatar}
+                            alt={candidate.avatarAlt}
+                            width={34}
+                            height={34}
+                          />
+                        </span>
+                        <strong>{candidate.name}</strong>
+                        <span>{candidate.match}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </article>
 
@@ -206,7 +252,9 @@ export default function EmployersPage() {
                     <span>days</span>
                     <del>42 days</del>
                   </div>
-                  <p>Avg time-to-hire <span>Industry average</span></p>
+                  <p>
+                    Avg time-to-hire <span>Industry average</span>
+                  </p>
                   <div className="outcome-progress-head">
                     <span>71% faster</span>
                     <b>+71%</b>
@@ -225,7 +273,9 @@ export default function EmployersPage() {
             <div className="interior-cta-panel">
               <div className="interior-cta-content">
                 <h2 className="interior-cta-title">Access job-ready talent</h2>
-                <p className="interior-cta-text">Stop screening. Start hiring ready.</p>
+                <p className="interior-cta-text">
+                  Stop screening. Start hiring ready.
+                </p>
                 <div className="interior-cta-buttons">
                   <a href="#" className="pill-button yellow">
                     Get Started <span aria-hidden="true">&rarr;</span>

@@ -1,0 +1,147 @@
+- generic [active] [ref=e1]:
+  - img "Career Fusion" [ref=e3]
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - navigation [ref=e6]:
+        - img "Career Fusion" [ref=e8]
+        - generic [ref=e9]:
+          - link "Login" [ref=e10] [cursor=pointer]:
+            - /url: "#"
+          - link "Sign-up" [ref=e11] [cursor=pointer]:
+            - /url: "#"
+          - button "Toggle menu" [ref=e12] [cursor=pointer]
+    - main [ref=e16]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - heading "Your students deserve better outcomes" [level=1] [ref=e20]:
+            - text: Your students
+            - text: deserve better
+            - text: outcomes
+          - paragraph [ref=e21]: Know exactly how job-ready your cohort is and take control of their employability outcomes.
+          - generic [ref=e22]:
+            - link "Get Started" [ref=e23] [cursor=pointer]:
+              - /url: "#"
+              - text: Get Started
+              - generic [ref=e24]: →
+            - link "Get Early Access" [ref=e25] [cursor=pointer]:
+              - /url: "#"
+              - text: Get Early Access
+              - generic [ref=e26]: →
+        - generic [ref=e27]:
+          - img "Students in a library seminar" [ref=e28]
+          - generic [ref=e30]:
+            - strong [ref=e31]: Cohort Readiness
+            - generic [ref=e32]: Class of 2027
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: The Institutional Truth
+        - heading "You measure what you can't change" [level=2] [ref=e42]:
+          - text: You measure what you can't
+          - text: change
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - img "Institution team reviewing graduate outcomes" [ref=e45]
+            - generic [ref=e46]:
+              - text: We hear about graduate outcomes too late.
+              - text: Always after.
+            - generic [ref=e47]: By then there's nothing we can change.
+          - generic [ref=e48]:
+            - article [ref=e49]:
+              - generic [ref=e51]:
+                - heading "Outcomes measured too late" [level=3] [ref=e52]
+                - paragraph [ref=e53]: Relying on lagging indicators means interventions are impossible when they matter most.
+            - article [ref=e54]:
+              - generic [ref=e56]:
+                - heading "No real-time insight" [level=3] [ref=e57]
+                - paragraph [ref=e58]: Without a live view of cohort readiness, identifying systemic skill gaps becomes guesswork.
+            - article [ref=e59]:
+              - generic [ref=e61]:
+                - heading "Limited intervention" [level=3] [ref=e62]
+                - paragraph [ref=e63]: Inability to precisely target support resources to the students who are falling behind.
+      - generic [ref=e65]:
+        - paragraph [ref=e66]: The Solution
+        - heading "See readiness. Shape outcomes." [level=2] [ref=e67]
+        - paragraph [ref=e68]: Live cohort readiness, early signal detection, and outcome reporting — all in one institutional view.
+        - generic [ref=e69]:
+          - article [ref=e70]:
+            - generic [ref=e71]:
+              - heading "Cohort Readiness Distribution" [level=3] [ref=e72]
+              - generic [ref=e73]:
+                - text: "248"
+                - text: students
+            - generic [ref=e74]:
+              - generic [ref=e76]: 86%+
+              - generic [ref=e80]: 71-85
+              - generic [ref=e84]: 56-70
+              - generic [ref=e88]: 41-55
+              - generic [ref=e92]: 0-40
+          - article [ref=e95]:
+            - heading "Gap Alerts" [level=3] [ref=e97]
+            - generic [ref=e99]:
+              - paragraph [ref=e102]: 12 students below readiness threshold
+              - paragraph [ref=e105]: "4 missing core skill: SQL"
+              - paragraph [ref=e108]: Communication scores trending -8% this term
+          - article [ref=e109]:
+            - heading "Cohort Outcomes" [level=3] [ref=e110]
+            - generic [ref=e111]:
+              - generic [ref=e112]:
+                - strong [ref=e113]: 87%
+                - generic [ref=e114]: Placement rate
+              - generic [ref=e115]:
+                - strong [ref=e116]: "74"
+                - generic [ref=e117]: Avg readiness at grad
+            - generic [ref=e118]: +11% vs last cohort
+            - paragraph [ref=e119]: Top Destinations
+            - generic [ref=e120]:
+              - generic [ref=e121]: TechCorp
+              - generic [ref=e122]: FinancePlus
+              - generic [ref=e123]: HealthSystems
+      - generic [ref=e127]:
+        - heading "Partner with CareerFusion" [level=2] [ref=e128]
+        - paragraph [ref=e129]: Shape outcomes. Don't just report them. Join the forward-thinking institutions leading the change in graduate employability.
+        - generic [ref=e130]:
+          - link "Get Started" [ref=e131] [cursor=pointer]:
+            - /url: "#"
+            - text: Get Started
+            - generic [ref=e132]: →
+          - link "Get Early Access" [ref=e133] [cursor=pointer]:
+            - /url: "#"
+            - text: Get Early Access
+            - generic [ref=e134]: →
+    - contentinfo [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - generic [ref=e138]:
+            - img "Career Fusion" [ref=e139]
+            - paragraph [ref=e140]: Bridging the gap between education, careers and opportunity through verified employability intelligence
+            - paragraph [ref=e141]: Follow us
+            - generic "Social links" [ref=e142]:
+              - link "X" [ref=e143] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e144]
+              - link "Instagram" [ref=e146] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e147]
+              - link "LinkedIn" [ref=e149] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e150]
+          - generic [ref=e152]:
+            - heading "Platforms" [level=2] [ref=e153]
+            - navigation "Platform links" [ref=e154]:
+              - link "Login" [ref=e155] [cursor=pointer]:
+                - /url: "#"
+              - link "Sign-up" [ref=e156] [cursor=pointer]:
+                - /url: "#"
+              - link "Contact Us" [ref=e157] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e158]:
+            - heading "For Users" [level=2] [ref=e159]
+            - navigation "User links" [ref=e160]:
+              - link "Students" [ref=e161] [cursor=pointer]:
+                - /url: "#"
+              - link "Employers" [ref=e162] [cursor=pointer]:
+                - /url: "#"
+              - link "Institutions" [ref=e163] [cursor=pointer]:
+                - /url: "#"
+        - img [ref=e165]
+  - button "Open Next.js Dev Tools" [ref=e171] [cursor=pointer]:
+    - img [ref=e172]
