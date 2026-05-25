@@ -3,22 +3,66 @@ import Footer from "@/components/Footer";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Career Fusion",
+  title: "Contact Us - Career Fusion",
   description:
-    "Get in touch with Career Fusion. Whether you're proving skills, hiring talent, or partnering — we're here.",
+    "Get in touch with Career Fusion. Whether you're proving skills, hiring talent, or partnering - we're here.",
 };
+
+const contactMethods = [
+  {
+    type: "phone",
+    label: "Phone Support",
+    lines: ["+1 (800) 555-0198", "Mon-Fri, 9am - 5pm EST"],
+  },
+  {
+    type: "location",
+    label: "Headquarters",
+    lines: ["123 Innovation Drive, Suite 400", "San Francisco, CA 94105"],
+  },
+  {
+    type: "mail",
+    label: "General Inquiries",
+    lines: ["hello@careerfusion.com"],
+    href: "mailto:hello@careerfusion.com",
+  },
+];
+
+function ContactIcon({ type }: { type: string }) {
+  if (type === "phone") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6.6 3.8 9 3.2c.8-.2 1.6.2 1.9 1l1 2.4c.3.7.1 1.4-.4 1.9l-1.2 1.1a12 12 0 0 0 4.2 4.2l1.1-1.2c.5-.5 1.2-.7 1.9-.4l2.4 1c.8.3 1.2 1.1 1 1.9l-.6 2.4c-.2.8-.9 1.4-1.7 1.4A15.5 15.5 0 0 1 5.2 5.5c0-.8.6-1.5 1.4-1.7Z" />
+      </svg>
+    );
+  }
+
+  if (type === "location") {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 21s6.6-5.8 6.6-11.2A6.6 6.6 0 0 0 5.4 9.8C5.4 15.2 12 21 12 21Z" />
+        <circle cx="12" cy="9.8" r="2.1" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M4.8 6.4h14.4v11.2H4.8V6.4Z" />
+      <path d="m5.6 7.2 6.4 5 6.4-5" />
+    </svg>
+  );
+}
 
 export default function ContactPage() {
   return (
-    <div className="home-page">
+    <div className="home-page contact-page">
       <Navbar />
-      <main>
-        {/* Hero */}
+      <main className="contact-main">
         <section className="contact-hero">
           <div className="page-container">
             <p className="contact-hero-eyebrow">Contact Us</p>
             <h1 className="contact-hero-title">
-              Let&apos;s talk <span className="accent-green">readiness</span>
+              Let&apos;s talk <span>readiness</span>
             </h1>
             <p className="contact-hero-subtitle">
               Whether you&apos;re looking to prove your skills, hire top talent,
@@ -28,11 +72,9 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Form + Sidebar */}
-        <section>
+        <section className="contact-message-section">
           <div className="page-container contact-grid">
-            {/* Left — form */}
-            <div>
+            <form className="contact-form" aria-label="Contact form">
               <h2 className="contact-form-title">Send us a message</h2>
 
               <div className="form-row-two">
@@ -44,7 +86,7 @@ export default function ContactPage() {
                     id="first-name"
                     className="form-input"
                     type="text"
-                    placeholder="Jane"
+                    placeholder="John"
                     autoComplete="given-name"
                   />
                 </div>
@@ -86,69 +128,53 @@ export default function ContactPage() {
                 />
               </div>
 
-              <button className="pill-button primary" style={{ marginTop: 8 }}>
-                Send Message &rarr;
+              <button className="pill-button primary contact-submit" type="submit">
+                Send Message <span aria-hidden="true">&rarr;</span>
               </button>
-            </div>
+            </form>
 
-            {/* Right — sidebar */}
             <aside className="contact-sidebar-card">
-              <h3 className="contact-sidebar-title">Other ways to reach us</h3>
+              <h2 className="contact-sidebar-title">Other ways to reach us</h2>
 
-              <div className="contact-info-item">
-                <div className="contact-info-icon">
-                  {/* Phone icon */}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.14 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.05 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21 17z"/>
-                  </svg>
-                </div>
-                <div>
-                  <p className="contact-info-label">Phone Support</p>
-                  <p className="contact-info-value">
-                    +1 (800) 555-0198<br />Mon–Fri, 9am – 5pm EST
-                  </p>
-                </div>
-              </div>
-
-              <div className="contact-info-item">
-                <div className="contact-info-icon">
-                  {/* Location icon */}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
-                  </svg>
-                </div>
-                <div>
-                  <p className="contact-info-label">Headquarters</p>
-                  <p className="contact-info-value">
-                    123 Innovation Drive, Suite 400<br />San Francisco, CA 94105
-                  </p>
-                </div>
-              </div>
-
-              <div className="contact-info-item">
-                <div className="contact-info-icon">
-                  {/* Mail icon */}
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
-                  </svg>
-                </div>
-                <div>
-                  <p className="contact-info-label">General Inquiries</p>
-                  <p className="contact-info-value">
-                    <a href="mailto:hello@careerfusion.com">hello@careerfusion.com</a>
-                  </p>
-                </div>
+              <div className="contact-info-list">
+                {contactMethods.map((method) => (
+                  <div className="contact-info-item" key={method.label}>
+                    <span className="contact-info-icon">
+                      <ContactIcon type={method.type} />
+                    </span>
+                    <div>
+                      <p className="contact-info-label">{method.label}</p>
+                      <p className="contact-info-value">
+                        {method.href ? (
+                          <a href={method.href}>{method.lines[0]}</a>
+                        ) : (
+                          method.lines.map((line, index) => (
+                            <span key={line}>
+                              {line}
+                              {index < method.lines.length - 1 ? <br /> : null}
+                            </span>
+                          ))
+                        )}
+                      </p>
+                    </div>
+                  </div>
+                ))}
               </div>
 
               <div className="contact-social-actions">
-                <button className="contact-action-btn" aria-label="Copy link">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                <button className="contact-action-btn" type="button" aria-label="Copy link">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M9.5 14.5 14.5 9.5" />
+                    <path d="M8.7 10.6 7.4 12a4 4 0 0 0 5.7 5.7l1.3-1.3" />
+                    <path d="M15.3 13.4 16.6 12a4 4 0 0 0-5.7-5.7L9.6 7.6" />
                   </svg>
                 </button>
-                <button className="contact-action-btn" aria-label="Share">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+                <button className="contact-action-btn" type="button" aria-label="Share">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="18" cy="5" r="2.6" />
+                    <circle cx="6" cy="12" r="2.6" />
+                    <circle cx="18" cy="19" r="2.6" />
+                    <path d="m8.3 10.8 7.4-4.4M8.3 13.2l7.4 4.4" />
                   </svg>
                 </button>
               </div>
@@ -156,19 +182,18 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Still exploring CTA */}
-        <section style={{ paddingBottom: 80 }}>
+        <section className="contact-still-exploring">
           <div className="page-container">
             <div className="contact-cta-panel">
-              <div style={{ position: "relative", zIndex: 1 }}>
+              <div className="contact-cta-content">
                 <h2 className="interior-cta-title">Still exploring?</h2>
                 <p className="interior-cta-text">
                   Discover how our employability readiness scores can transform
                   your hiring or learning outcomes.
                 </p>
-                <div className="interior-cta-buttons" style={{ marginTop: 24 }}>
+                <div className="interior-cta-buttons">
                   <a href="#" className="pill-button yellow">
-                    Get Started &rarr;
+                    Get Started <span aria-hidden="true">&rarr;</span>
                   </a>
                 </div>
               </div>

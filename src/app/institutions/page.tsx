@@ -152,8 +152,14 @@ export default function InstitutionsPage() {
 
               <div className="institution-problem-list">
                 {truthItems.map((item) => (
-                  <article className="institution-problem-item" key={item.title}>
-                    <span className="institution-problem-icon" aria-hidden="true">
+                  <article
+                    className="institution-problem-item"
+                    key={item.title}
+                  >
+                    <span
+                      className="institution-problem-icon"
+                      aria-hidden="true"
+                    >
                       <Image
                         src={item.icon}
                         alt=""
@@ -271,7 +277,9 @@ export default function InstitutionsPage() {
           <div className="page-container">
             <div className="interior-cta-panel">
               <div className="interior-cta-content">
-                <h2 className="interior-cta-title">Partner with CareerFusion</h2>
+                <h2 className="interior-cta-title">
+                  Partner with CareerFusion
+                </h2>
                 <p className="interior-cta-text">
                   Shape outcomes. Don&apos;t just report them. Join the
                   forward-thinking institutions leading the change in graduate

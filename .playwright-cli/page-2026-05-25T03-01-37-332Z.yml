@@ -1,0 +1,124 @@
+- generic [active] [ref=e1]:
+  - img "Career Fusion" [ref=e3]
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - navigation [ref=e6]:
+        - img "Career Fusion" [ref=e8]
+        - generic [ref=e9]:
+          - link "Home" [ref=e10] [cursor=pointer]:
+            - /url: /
+          - link "Students" [ref=e11] [cursor=pointer]:
+            - /url: /students
+          - link "Employers" [ref=e12] [cursor=pointer]:
+            - /url: /employers
+          - link "Institutions" [ref=e13] [cursor=pointer]:
+            - /url: /institutions
+          - link "Contact Us" [ref=e14] [cursor=pointer]:
+            - /url: /contact
+        - generic [ref=e15]:
+          - link "Login" [ref=e16] [cursor=pointer]:
+            - /url: "#"
+          - link "Sign-up" [ref=e17] [cursor=pointer]:
+            - /url: "#"
+    - main [ref=e18]:
+      - generic [ref=e20]:
+        - paragraph [ref=e21]: Contact Us
+        - heading "Let's talk readiness" [level=1] [ref=e22]
+        - paragraph [ref=e23]: Whether you're looking to prove your skills, hire top talent, or partner with us, we're here to help you navigate the future of work.
+      - generic [ref=e25]:
+        - form "Contact form" [ref=e26]:
+          - heading "Send us a message" [level=2] [ref=e27]
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - generic [ref=e30]: First Name
+              - textbox "First Name" [ref=e31]:
+                - /placeholder: John
+            - generic [ref=e32]:
+              - generic [ref=e33]: Last Name
+              - textbox "Last Name" [ref=e34]:
+                - /placeholder: Doe
+          - generic [ref=e35]:
+            - generic [ref=e36]: Work Email
+            - textbox "Work Email" [ref=e37]:
+              - /placeholder: jane@company.com
+          - generic [ref=e38]:
+            - generic [ref=e39]: How can we help?
+            - textbox "How can we help?" [ref=e40]:
+              - /placeholder: Tell us a bit about your needs...
+          - button "Send Message" [ref=e41] [cursor=pointer]:
+            - text: Send Message
+            - generic [ref=e42]: →
+        - complementary [ref=e43]:
+          - heading "Other ways to reach us" [level=2] [ref=e44]
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - img [ref=e48]
+              - generic [ref=e50]:
+                - paragraph [ref=e51]: Phone Support
+                - paragraph [ref=e52]:
+                  - generic [ref=e53]: +1 (800) 555-0198
+                  - text: Mon-Fri, 9am - 5pm EST
+            - generic [ref=e54]:
+              - img [ref=e56]
+              - generic [ref=e59]:
+                - paragraph [ref=e60]: Headquarters
+                - paragraph [ref=e61]:
+                  - generic [ref=e62]: 123 Innovation Drive, Suite 400
+                  - text: San Francisco, CA 94105
+            - generic [ref=e63]:
+              - img [ref=e65]
+              - generic [ref=e68]:
+                - paragraph [ref=e69]: General Inquiries
+                - paragraph [ref=e70]:
+                  - link "hello@careerfusion.com" [ref=e71] [cursor=pointer]:
+                    - /url: mailto:hello@careerfusion.com
+          - generic [ref=e72]:
+            - button "Copy link" [ref=e73] [cursor=pointer]:
+              - img [ref=e74]
+            - button "Share" [ref=e78] [cursor=pointer]:
+              - img [ref=e79]
+      - generic [ref=e87]:
+        - heading "Still exploring?" [level=2] [ref=e88]
+        - paragraph [ref=e89]: Discover how our employability readiness scores can transform your hiring or learning outcomes.
+        - link "Get Started" [ref=e91] [cursor=pointer]:
+          - /url: "#"
+          - text: Get Started
+          - generic [ref=e92]: →
+    - contentinfo [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - generic [ref=e96]:
+            - img "Career Fusion" [ref=e97]
+            - paragraph [ref=e98]: Bridging the gap between education, careers and opportunity through verified employability intelligence
+            - paragraph [ref=e99]: Follow us
+            - generic "Social links" [ref=e100]:
+              - link "X" [ref=e101] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e102]
+              - link "Instagram" [ref=e104] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e105]
+              - link "LinkedIn" [ref=e107] [cursor=pointer]:
+                - /url: "#"
+                - img [ref=e108]
+          - generic [ref=e110]:
+            - heading "Platforms" [level=2] [ref=e111]
+            - navigation "Platform links" [ref=e112]:
+              - link "Login" [ref=e113] [cursor=pointer]:
+                - /url: "#"
+              - link "Sign-up" [ref=e114] [cursor=pointer]:
+                - /url: "#"
+              - link "Contact Us" [ref=e115] [cursor=pointer]:
+                - /url: "#"
+          - generic [ref=e116]:
+            - heading "For Users" [level=2] [ref=e117]
+            - navigation "User links" [ref=e118]:
+              - link "Students" [ref=e119] [cursor=pointer]:
+                - /url: "#"
+              - link "Employers" [ref=e120] [cursor=pointer]:
+                - /url: "#"
+              - link "Institutions" [ref=e121] [cursor=pointer]:
+                - /url: "#"
+        - img [ref=e123]
+  - button "Open Next.js Dev Tools" [ref=e129] [cursor=pointer]:
+    - img [ref=e130]
