@@ -63,7 +63,7 @@ export default function EmployersPage() {
           <div className="page-container employer-hero-grid">
             <div className="employer-hero-copy">
               <h1 className="employer-hero-title">
-                Hire <span>job-ready candidates</span>, not
+                Hire <span>job-ready candidates</span>, not{" "}
                 <br />
                 just CVs
               </h1>
@@ -126,7 +126,7 @@ export default function EmployersPage() {
           <div className="page-container">
             <p className="employer-eyebrow">The Cost of Guessing</p>
             <h2 className="employer-section-title">
-              CVs don&apos;t show performance.
+              CVs don&apos;t show performance.{" "}
               <br />
               Interviews don&apos;t scale.
             </h2>
@@ -173,7 +173,7 @@ export default function EmployersPage() {
           <div className="page-container">
             <p className="employer-eyebrow">The Solution</p>
             <h2 className="employer-solution-title">
-              Hire based on <span>what actually</span>
+              Hire based on <span>what actually</span>{" "}
               <br />
               <span>matters</span>
             </h2>

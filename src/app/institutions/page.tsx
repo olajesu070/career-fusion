@@ -126,7 +126,7 @@ export default function InstitutionsPage() {
           <div className="page-container">
             <p className="institution-eyebrow">The Institutional Truth</p>
             <h2 className="institution-section-title">
-              You measure what you can&apos;t
+              You measure what you can&apos;t{" "}
               <br />
               change
             </h2>

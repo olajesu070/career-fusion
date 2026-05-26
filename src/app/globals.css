@@ -1632,7 +1632,8 @@ a {
   }
 
   .stat-value {
-    font-size: 269px;
+    font-size: 30px;
+    line-height: 1.05;
   }
 
   .stat-label {
@@ -1677,6 +1678,19 @@ a {
     padding-top: 84px;
   }
 
+  .solution-cards {
+    gap: 24px;
+  }
+
+  .product-card,
+  .product-card.path,
+  .product-card.score-card,
+  .product-card.jobs {
+    height: auto;
+    min-height: 0;
+    transform: none;
+  }
+
   .how-section {
     padding-top: 92px;
   }
@@ -1708,6 +1722,9 @@ a {
   }
 
   .cta-copy {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
     padding: 46px 28px 42px;
   }
 
@@ -1736,13 +1753,30 @@ a {
   .footer-wordmark {
     font-size: 30px;
     letter-spacing: 7px;
+    transform: none;
     white-space: normal;
+  }
+
+  .footer-text {
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 }
 
 @media (max-width: 420px) {
   .hero-title {
     font-size: 38px;
+  }
+  .login-link {
+    display: none;
+  }
+  .nav-actions {
+    gap: 12px;
+  }
+  .signup-link {
+    min-width: 94px;
+    line-height: 40px;
+    font-size: 14px;
   }
   .truth-title,
   .solution-title {
@@ -1777,9 +1811,11 @@ a {
     visibility 0.5s ease;
   opacity: 1;
   visibility: visible;
+  animation: loaderAutoHide 0.5s ease 1.4s forwards;
 }
 
 .page-loader--out {
+  animation: none;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -1798,6 +1834,13 @@ a {
   50% {
     opacity: 0.6;
     transform: scale(0.94);
+  }
+}
+
+@keyframes loaderAutoHide {
+  to {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 

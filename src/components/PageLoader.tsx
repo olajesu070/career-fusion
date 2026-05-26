@@ -8,23 +8,28 @@ export default function PageLoader() {
   const [fade, setFade] = useState(false);
 
   useEffect(() => {
+    let fadeTimeout: ReturnType<typeof setTimeout> | undefined;
+    let hideTimeout: ReturnType<typeof setTimeout> | undefined;
+
     const handleLoad = () => {
+      if (fadeTimeout) clearTimeout(fadeTimeout);
+      if (hideTimeout) clearTimeout(hideTimeout);
       setFade(true);
-      const timeout = setTimeout(() => setLoading(false), 500);
-      return () => clearTimeout(timeout);
+      hideTimeout = setTimeout(() => setLoading(false), 500);
     };
 
     if (document.readyState === "complete") {
-      const timeout = setTimeout(handleLoad, 800);
-      return () => clearTimeout(timeout);
+      fadeTimeout = setTimeout(handleLoad, 450);
     } else {
       window.addEventListener("load", handleLoad);
-      const fallback = setTimeout(handleLoad, 3000);
-      return () => {
-        window.removeEventListener("load", handleLoad);
-        clearTimeout(fallback);
-      };
+      fadeTimeout = setTimeout(handleLoad, 1400);
     }
+
+    return () => {
+      window.removeEventListener("load", handleLoad);
+      if (fadeTimeout) clearTimeout(fadeTimeout);
+      if (hideTimeout) clearTimeout(hideTimeout);
+    };
   }, []);
 
   if (!loading) return null;

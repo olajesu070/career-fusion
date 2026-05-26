@@ -3497,3 +3497,508 @@
     font-size: 26px;
   }
 }
+
+/* Mobile QA fixes: keep page-specific compositions inside the viewport. */
+@media (max-width: 1020px) {
+  .institution-hero {
+    padding: 72px 0 92px;
+  }
+
+  .institution-hero-grid,
+  .institution-truth-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .institution-hero-grid {
+    gap: 44px;
+  }
+
+  .institution-hero-copy {
+    max-width: 640px;
+  }
+
+  .institution-hero-visual {
+    width: min(100%, 640px);
+    height: 340px;
+    margin: 0 auto 36px;
+  }
+
+  .institution-readiness-card {
+    left: 24px;
+    right: 24px;
+    bottom: -44px;
+    width: auto;
+  }
+
+  .institution-truth-section {
+    padding: 20px 0 96px;
+  }
+
+  .institution-truth-grid {
+    max-width: 640px;
+    gap: 42px;
+    margin: 48px auto 0;
+  }
+
+  .institution-problem-list {
+    gap: 28px;
+  }
+
+  .institution-problem-item p {
+    max-width: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .contact-page .contact-grid {
+    gap: 36px;
+    padding: 0;
+  }
+
+  .contact-form,
+  .contact-sidebar-card {
+    width: 100%;
+  }
+
+  .contact-sidebar-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .employer-hero-title {
+    font-size: clamp(40px, 11vw, 46px);
+    line-height: 1.16;
+  }
+
+  .employer-section-title,
+  .employer-solution-title {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+
+  .employer-solution-copy {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+
+  .employer-cost-section {
+    padding-bottom: 72px;
+  }
+
+  .employer-solution-section {
+    padding-bottom: 64px;
+  }
+
+  .employer-page .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 42px 20px;
+  }
+
+  .employer-page .footer-about {
+    grid-column: 1 / -1;
+  }
+
+  .institution-hero {
+    padding: 60px 0 78px;
+  }
+
+  .institution-hero-title {
+    font-size: clamp(42px, 12vw, 50px);
+    line-height: 1.12;
+  }
+
+  .institution-hero-subtitle {
+    font-size: 16px;
+  }
+
+  .institution-hero-actions {
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .institution-page .institution-hero-actions .pill-button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .institution-hero-visual {
+    height: 285px;
+    border-radius: 38px;
+    margin-bottom: 42px;
+  }
+
+  .institution-hero-image {
+    border-radius: 38px;
+  }
+
+  .institution-readiness-card {
+    left: 16px;
+    right: 16px;
+    bottom: -54px;
+    min-height: 108px;
+    border-radius: 26px;
+    padding: 18px;
+  }
+
+  .institution-card-head {
+    gap: 12px;
+  }
+
+  .institution-card-head strong {
+    font-size: 15px;
+  }
+
+  .institution-card-head span {
+    font-size: 10px;
+  }
+
+  .institution-hero-bars {
+    height: 44px;
+    gap: 7px;
+  }
+
+  .institution-section-title {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+
+  .institution-section-title br {
+    display: none;
+  }
+
+  .institution-truth-section {
+    padding-bottom: 78px;
+  }
+
+  .institution-truth-grid {
+    gap: 30px;
+    margin-top: 34px;
+  }
+
+  .institution-truth-visual {
+    height: 360px;
+    border-radius: 38px;
+  }
+
+  .institution-truth-image {
+    border-radius: 38px;
+  }
+
+  .institution-note-bubble {
+    top: 16px;
+    left: 16px;
+    width: min(286px, calc(100% - 32px));
+    min-height: 0;
+    border-radius: 0 24px 24px 24px;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .institution-dark-bubble {
+    right: 16px;
+    bottom: 16px;
+    max-width: 184px;
+    min-height: 0;
+    padding: 14px 18px;
+    font-size: 13px;
+    line-height: 1.35;
+    text-align: left;
+  }
+
+  .institution-problem-item {
+    grid-template-columns: 40px 1fr;
+    gap: 14px;
+  }
+
+  .institution-problem-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .institution-problem-item h3 {
+    font-size: 20px;
+  }
+
+  .institution-problem-item p {
+    margin-top: 8px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .institution-solution-cards {
+    width: 100%;
+    max-width: 340px;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .institution-solution-arc {
+    display: none;
+  }
+
+  .institution-product-card {
+    min-height: auto;
+    border-radius: 30px;
+    padding: 24px 18px;
+  }
+
+  .contact-hero {
+    padding: 28px 0 32px;
+  }
+
+  .contact-page .contact-grid {
+    width: min(100% - 32px, 1200px);
+  }
+
+  .contact-form-title {
+    text-align: left;
+  }
+
+  .contact-page .form-input {
+    height: 42px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .contact-page .form-textarea {
+    min-height: 110px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+
+  .contact-page .form-label {
+    font-size: 11px;
+  }
+
+  .contact-submit {
+    width: 100%;
+    min-height: 46px;
+    font-size: 13px;
+  }
+
+  .contact-sidebar-card {
+    border-radius: 30px;
+    padding: 28px;
+  }
+
+  .contact-page .contact-cta-panel {
+    min-height: 250px;
+    border-radius: 34px;
+    padding: 40px 24px;
+  }
+
+  .contact-page .contact-cta-panel .interior-cta-title {
+    font-size: 26px;
+    line-height: 1.18;
+  }
+
+  .contact-page .contact-cta-panel .interior-cta-text {
+    max-width: 280px;
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .contact-page .contact-cta-panel .interior-cta-buttons {
+    margin-top: 22px;
+  }
+
+  .contact-page .contact-cta-panel .pill-button {
+    width: 100%;
+    min-height: 44px;
+    font-size: 13px;
+  }
+
+  .contact-info-label,
+  .contact-info-value {
+    font-size: 12px;
+  }
+
+  .student-truth-panel {
+    margin-top: 48px;
+  }
+
+  .student-page .student-solution-section {
+    margin-top: 36px;
+    padding-top: 68px;
+  }
+
+  .student-page .product-card,
+  .student-page .product-card.score-card,
+  .student-page .product-card.path,
+  .student-page .product-card.jobs {
+    height: auto;
+    min-height: 0;
+  }
+
+  .student-solution-cards-wrap {
+    margin-top: 42px;
+  }
+
+  .student-page .student-cta {
+    padding: 64px 0 72px;
+  }
+}
+
+@media (max-width: 420px) {
+  .institution-hero-title {
+    font-size: 42px;
+  }
+
+  .institution-hero-visual {
+    height: 250px;
+  }
+
+  .institution-readiness-card {
+    left: 12px;
+    right: 12px;
+  }
+
+  .institution-truth-visual {
+    height: 330px;
+  }
+
+  .employer-hero-title {
+    font-size: 39px;
+  }
+}
+
+/* Contact mobile readability pass */
+@media (max-width: 900px) {
+  .contact-hero-eyebrow {
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+
+  .contact-hero-subtitle {
+    max-width: 620px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .contact-form-title {
+    margin-bottom: 20px;
+    font-size: 48px;
+  }
+
+  .contact-page .form-group {
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .contact-page .form-label {
+    font-size: 19.5px;
+    line-height: 1.2;
+  }
+
+  .contact-page .form-input {
+    height: 64px;
+    border-radius: 12px;
+    padding: 0 18px;
+    font-size: 22.5px;
+  }
+
+  .contact-page .form-textarea {
+    min-height: 172px;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 22.5px;
+  }
+
+  .contact-submit {
+    min-height: 68px;
+    font-size: 22.5px;
+  }
+
+  .contact-sidebar-card {
+    padding: 30px;
+  }
+
+  .contact-sidebar-title {
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+
+  .contact-info-list {
+    gap: 18px;
+  }
+
+  .contact-info-item {
+    grid-template-columns: 32px 1fr;
+    gap: 14px;
+  }
+
+  .contact-info-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contact-info-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .contact-info-label {
+    font-size: 13px;
+  }
+
+  .contact-info-value {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .contact-page .contact-cta-panel::before {
+    display: none;
+  }
+
+  .contact-page .contact-cta-panel .interior-cta-title {
+    font-size: 28px;
+  }
+
+  .contact-page .contact-cta-panel .interior-cta-text {
+    max-width: 480px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .contact-page .contact-cta-panel .pill-button {
+    min-height: 48px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-hero-title {
+    font-size: 34px;
+  }
+
+  .contact-hero-subtitle {
+    font-size: 14px;
+  }
+
+  .contact-form-title {
+    font-size: 43.5px;
+  }
+
+  .contact-page .form-label {
+    font-size: 18px;
+  }
+
+  .contact-page .form-input,
+  .contact-page .form-textarea,
+  .contact-submit {
+    font-size: 21px;
+  }
+
+  .contact-sidebar-title {
+    font-size: 22px;
+  }
+
+  .contact-info-label,
+  .contact-info-value {
+    font-size: 12.5px;
+  }
+}
