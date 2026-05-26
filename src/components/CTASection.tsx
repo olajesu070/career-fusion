@@ -7,7 +7,7 @@ export default function CTASection() {
         <div className="cta-panel">
           <div className="cta-arch" aria-hidden="true">
             <Image
-              src="/vector.png"
+              src="/Vector.png"
               alt=""
               fill
               sizes="640px"

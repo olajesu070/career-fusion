@@ -121,9 +121,11 @@ export default function StudentsPage() {
         <section className="student-truth-section truth-section">
           <div className="page-container">
             <div className="student-truth-panel">
-              <img
+              <Image
                 src="/halfCircle.png"
                 alt=""
+                width={197}
+                height={249}
                 className="truth-half-circle"
                 aria-hidden="true"
               />
@@ -139,10 +141,10 @@ export default function StudentsPage() {
                   sizes="(max-width: 1020px) 100vw, 523px"
                 />
                 <div className="truth-floating-bubble top-right">
-                  "Another rejection. They didn't even say why"
+                  &ldquo;Another rejection. They didn&apos;t even say why&rdquo;
                 </div>
                 <div className="truth-floating-bubble bottom-left">
-                  "I have the qualifications. So what am I missing?"
+                  &ldquo;I have the qualifications. So what am I missing?&rdquo;
                 </div>
               </div>
 
