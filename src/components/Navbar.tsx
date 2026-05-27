@@ -21,7 +21,13 @@ export default function Navbar() {
     <header className="site-header">
       <nav className="site-nav">
         <div className="brand-logo">
-          <Image src="/logo.png" alt="Career Fusion" width={91} height={51} priority />
+          <Image
+            src="/navSvgLogo.svg"
+            alt="Career Fusion"
+            width={91}
+            height={51}
+            priority
+          />
         </div>
         <div className="nav-links">
           {navLinks.map((link) => (
@@ -35,10 +41,14 @@ export default function Navbar() {
           ))}
         </div>
         <div className="nav-actions">
-          <Link href="#" className="login-link">Login</Link>
-          <Link href="#" className="signup-link">Sign-up</Link>
-          <button 
-            className={`mobile-menu-btn ${isOpen ? 'open' : ''}`} 
+          <Link href="#" className="login-link">
+            Login
+          </Link>
+          <Link href="#" className="signup-link">
+            Sign-up
+          </Link>
+          <button
+            className={`mobile-menu-btn ${isOpen ? "open" : ""}`}
             onClick={() => setOpenPath(isOpen ? null : pathname)}
             aria-label="Toggle menu"
           >
@@ -49,7 +59,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      <div className={`mobile-menu ${isOpen ? 'is-open' : ''}`}>
+      <div className={`mobile-menu ${isOpen ? "is-open" : ""}`}>
         <div className="mobile-nav-links">
           {navLinks.map((link) => (
             <Link

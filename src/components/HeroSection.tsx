@@ -121,7 +121,7 @@ export default function HeroSection() {
               <Image src="/Student.png" alt="" fill priority sizes="215px" />
             </div>
             <div className="hero-teacher-wrap">
-              <div className="hero-teacher-inner">
+              <div className="hero-teacher-inners">
                 <Image src="/Teacher.png" alt="" fill priority sizes="230px" />
               </div>
             </div>

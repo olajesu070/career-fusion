@@ -61,10 +61,11 @@ export default function StudentsSection() {
             </div>
             <div className="truth-image">
               <Image
-                src="/Frame 86.png"
+                src="/studentTruthImageSharp.webp"
                 alt="Student unsure about readiness"
                 fill
                 loading="eager"
+                unoptimized
                 sizes="(max-width: 1020px) 100vw, 576px"
               />
             </div>
@@ -73,10 +74,11 @@ export default function StudentsSection() {
           <div className="truth-grid employer">
             <div className="truth-image">
               <Image
-                src="/Frame 86 (1).png"
+                src="/employeeTruthSharp.webp"
                 alt="Employer struggling to screen candidates"
                 fill
                 loading="eager"
+                unoptimized
                 sizes="(max-width: 1020px) 100vw, 576px"
               />
             </div>

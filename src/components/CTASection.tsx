@@ -1,5 +1,16 @@
 import Image from "next/image";
 
+const ctaImages = [
+  { src: "/cta5.png", className: "cta-tile-one" },
+  { src: "/cta2.png", className: "cta-tile-two" },
+  { src: "/cta4.png", className: "cta-tile-three" },
+  { src: "/cta3.png", className: "cta-tile-four" },
+  { src: "/cta7.png", className: "cta-tile-five" },
+  { src: "/cta6.png", className: "cta-tile-six" },
+  { src: "/cta1.png", className: "cta-tile-seven" },
+  { src: "/cta2.png", className: "cta-tile-eight" },
+] as const;
+
 export default function CTASection() {
   return (
     <section className="cta-section">
@@ -40,15 +51,23 @@ export default function CTASection() {
             </div>
           </div>
 
-          <div className="cta-collage">
-            <Image
-              src="/Frame 110.png"
-              alt="Career Fusion community"
-              width={320}
-              height={230}
-              loading="eager"
-              className="cta-collage-img"
-            />
+          <div className="cta-collage" aria-hidden="true">
+            <div className="cta-collage-stack">
+              {ctaImages.map((image) => (
+                <span
+                  className={`cta-collage-card ${image.className}`}
+                  key={image.src}
+                >
+                  <Image
+                    src={image.src}
+                    alt=""
+                    fill
+                    loading="eager"
+                    sizes="120px"
+                  />
+                </span>
+              ))}
+            </div>
           </div>
         </div>
       </div>

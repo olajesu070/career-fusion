@@ -1,0 +1,243 @@
+{
+  "backup": "C:\\Users\\DELL\\Documents\\persnoal\\career-fusion\\output\\image-enhancement-backup\\20260527-040848",
+  "results": [
+    {
+      "file": "Student.png",
+      "status": "enhanced",
+      "dims": "225x289",
+      "mode": "RGBA->RGBA",
+      "bytes": "80930->82158"
+    },
+    {
+      "file": "Student5.png",
+      "status": "enhanced",
+      "dims": "225x289",
+      "mode": "RGBA->RGBA",
+      "bytes": "80930->82158"
+    },
+    {
+      "file": "student2.png",
+      "status": "enhanced",
+      "dims": "4096x4096",
+      "mode": "RGBA->RGBA",
+      "bytes": "9555187->9932707"
+    },
+    {
+      "file": "Teacher.png",
+      "status": "enhanced",
+      "dims": "226x288",
+      "mode": "RGBA->RGBA",
+      "bytes": "72021->87936"
+    },
+    {
+      "file": "Teacher2.png",
+      "status": "enhanced",
+      "dims": "901x1130",
+      "mode": "RGBA->RGBA",
+      "bytes": "686251->832289"
+    },
+    {
+      "file": "Teacher5.png",
+      "status": "enhanced",
+      "dims": "226x288",
+      "mode": "RGBA->RGBA",
+      "bytes": "72021->87936"
+    },
+    {
+      "file": "studentHeaderImage.png",
+      "status": "enhanced",
+      "dims": "1093x729",
+      "mode": "RGBA->RGBA",
+      "bytes": "1503486->1458943"
+    },
+    {
+      "file": "studentTruthImage.png",
+      "status": "enhanced",
+      "dims": "644x660",
+      "mode": "RGBA->RGBA",
+      "bytes": "469488->478610"
+    },
+    {
+      "file": "studentTruthImage2.png",
+      "status": "enhanced",
+      "dims": "928x618",
+      "mode": "RGBA->RGBA",
+      "bytes": "663350->592742"
+    },
+    {
+      "file": "studentTruthImageSharp.webp",
+      "status": "enhanced",
+      "dims": "1440x788",
+      "mode": "RGB->RGB",
+      "bytes": "125650->133602"
+    },
+    {
+      "file": "student-hero-reference.png",
+      "status": "enhanced",
+      "dims": "910x594",
+      "mode": "RGBA->RGBA",
+      "bytes": "913376->616777"
+    },
+    {
+      "file": "student-truth-reference.png",
+      "status": "enhanced",
+      "dims": "785x790",
+      "mode": "RGBA->RGBA",
+      "bytes": "477705->361428"
+    },
+    {
+      "file": "employeeHeroImage.jpg",
+      "status": "enhanced",
+      "dims": "4096x2734",
+      "mode": "RGB->RGB",
+      "bytes": "8489415->2811970"
+    },
+    {
+      "file": "employeeTruth2.png",
+      "status": "enhanced",
+      "dims": "711x475",
+      "mode": "RGBA->RGBA",
+      "bytes": "538538->586436"
+    },
+    {
+      "file": "employeeTruth3.png",
+      "status": "enhanced",
+      "dims": "2844x1900",
+      "mode": "RGBA->RGBA",
+      "bytes": "7045542->7348722"
+    },
+    {
+      "file": "employeeTruthSharp.webp",
+      "status": "enhanced",
+      "dims": "1440x765",
+      "mode": "RGB->RGB",
+      "bytes": "178722->196616"
+    },
+    {
+      "file": "cvImage.png",
+      "status": "enhanced",
+      "dims": "4094x3338",
+      "mode": "RGB->RGB",
+      "bytes": "4182591->3916232"
+    },
+    {
+      "file": "forEmployee.png",
+      "status": "enhanced",
+      "dims": "608x452",
+      "mode": "RGBA->RGBA",
+      "bytes": "485613->491963"
+    },
+    {
+      "file": "institutionHeroImage.png",
+      "status": "enhanced",
+      "dims": "793x528",
+      "mode": "RGBA->RGBA",
+      "bytes": "806305->917614"
+    },
+    {
+      "file": "institutionalTruthImage.png",
+      "status": "enhanced",
+      "dims": "793x486",
+      "mode": "RGBA->RGBA",
+      "bytes": "575535->589061"
+    },
+    {
+      "file": "Frame 86.png",
+      "status": "enhanced",
+      "dims": "576x325",
+      "mode": "RGBA->RGBA",
+      "bytes": "228246->208003"
+    },
+    {
+      "file": "Frame 86 (1).png",
+      "status": "enhanced",
+      "dims": "576x311",
+      "mode": "RGBA->RGBA",
+      "bytes": "303966->338797"
+    },
+    {
+      "file": "Frame 86 (2).png",
+      "status": "enhanced",
+      "dims": "622x452",
+      "mode": "RGBA->RGBA",
+      "bytes": "551587->620534"
+    },
+    {
+      "file": "Frame 110.png",
+      "status": "enhanced",
+      "dims": "245x375",
+      "mode": "RGBA->RGBA",
+      "bytes": "208309->219969"
+    },
+    {
+      "file": "cta1.png",
+      "status": "enhanced",
+      "dims": "553x829",
+      "mode": "RGBA->RGBA",
+      "bytes": "682609->705686"
+    },
+    {
+      "file": "cta2.png",
+      "status": "enhanced",
+      "dims": "553x829",
+      "mode": "RGBA->RGBA",
+      "bytes": "935561->1026973"
+    },
+    {
+      "file": "cta3.png",
+      "status": "enhanced",
+      "dims": "553x829",
+      "mode": "RGBA->RGBA",
+      "bytes": "819098->959515"
+    },
+    {
+      "file": "cta4.png",
+      "status": "enhanced",
+      "dims": "551x829",
+      "mode": "RGBA->RGBA",
+      "bytes": "762393->810472"
+    },
+    {
+      "file": "cta5.png",
+      "status": "enhanced",
+      "dims": "445x413",
+      "mode": "RGBA->RGBA",
+      "bytes": "335926->382218"
+    },
+    {
+      "file": "cta6.png",
+      "status": "enhanced",
+      "dims": "567x829",
+      "mode": "RGBA->RGBA",
+      "bytes": "752644->837399"
+    },
+    {
+      "file": "cta7.png",
+      "status": "enhanced",
+      "dims": "553x829",
+      "mode": "RGBA->RGBA",
+      "bytes": "1013388->1134315"
+    },
+    {
+      "file": "amaraAvatar.png",
+      "status": "enhanced",
+      "dims": "40x40",
+      "mode": "RGBA->RGBA",
+      "bytes": "3696->3021"
+    },
+    {
+      "file": "segunAvatar.png",
+      "status": "enhanced",
+      "dims": "32x32",
+      "mode": "RGBA->RGBA",
+      "bytes": "2695->2436"
+    },
+    {
+      "file": "serahJ.png",
+      "status": "enhanced",
+      "dims": "48x48",
+      "mode": "RGBA->RGBA",
+      "bytes": "4698->4129"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "page": "home",
+    "broken": 0,
+    "images": 21,
+    "loader": false,
+    "title": "Career Fusion - Know Your Readiness, Get Hired"
+  },
+  {
+    "page": "students",
+    "broken": 0,
+    "images": 7,
+    "loader": false,
+    "title": "For Students - Career Fusion"
+  },
+  {
+    "page": "employers",
+    "broken": 0,
+    "images": 12,
+    "loader": false,
+    "title": "For Employers - Career Fusion"
+  },
+  {
+    "page": "institutions",
+    "broken": 0,
+    "images": 13,
+    "loader": false,
+    "title": "For Institutions - Career Fusion"
+  },
+  {
+    "page": "contact",
+    "broken": 0,
+    "images": 3,
+    "loader": false,
+    "title": "Contact Us - Career Fusion"
+  }
+]

@@ -7,6 +7,8 @@ const tabs = {
   students: {
     label: "Students",
     image: "/Frame 86 (2).png",
+    imageWidth: 622,
+    imageHeight: 452,
     alt: "Students using Career Fusion",
     title: "For Students",
     copy: "Track your employability score, build a verified portfolio, and get matched to opportunities you qualify for.",
@@ -17,6 +19,8 @@ const tabs = {
   employers: {
     label: "Employers",
     image: "/forEmployee.png",
+    imageWidth: 608,
+    imageHeight: 452,
     alt: "Employer reviewing Career Fusion candidates",
     title: "For Employers",
     copy: "Discover pre-screened talent by readiness band. No more CV noise, just verified, capable candidates",
@@ -63,7 +67,8 @@ export default function EmployersSection() {
               src={active.image}
               alt={active.alt}
               key={active.image}
-              fill
+              width={active.imageWidth}
+              height={active.imageHeight}
               loading="eager"
               sizes="(max-width: 1020px) 100vw, 620px"
             />
