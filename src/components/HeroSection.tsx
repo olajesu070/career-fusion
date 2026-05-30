@@ -118,11 +118,41 @@ export default function HeroSection() {
             </div>
 
             <div className="hero-student">
-              <Image src="/Student.png" alt="" fill priority sizes="215px" />
+              <Image
+                src="/heroStudentVector.svg"
+                alt=""
+                fill
+                priority
+                sizes="215px"
+                className="hero-portrait-bg student-bg"
+              />
+              <Image
+                src="/heroStudentForeground.png"
+                alt=""
+                fill
+                priority
+                sizes="215px"
+                className="hero-person-image hero-student-image"
+              />
             </div>
             <div className="hero-teacher-wrap">
-              <div className="hero-teacher-inners">
-                <Image src="/Teacher.png" alt="" fill priority sizes="230px" />
+              <Image
+                src="/heroTeacherVector.svg"
+                alt=""
+                fill
+                priority
+                sizes="250px"
+                className="hero-portrait-bg teacher-bg"
+              />
+              <div className="hero-teacher-inner">
+                <Image
+                  src="/heroTeacherForeground.png"
+                  alt=""
+                  fill
+                  priority
+                  sizes="250px"
+                  className="hero-person-image hero-teacher-image"
+                />
               </div>
             </div>
           </div>
